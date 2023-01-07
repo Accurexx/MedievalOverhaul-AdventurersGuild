@@ -220,14 +220,14 @@
 <KCSG.SymbolDef>
   <defName>EEG_Sect_Novice</defName>
   <pawnKindDef>EEG_Sect_Novice</pawnKindDef>
-  <isSlave>false</isSlave> <!-- Default:false -->
-  <spawnPartOfFaction>true</spawnPartOfFaction> <!-- To spawn part of map faction Default:true -->
-  <faction>EEG_ShadowSect</faction> <!-- Null for wild pawn -->
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>EEG_ShadowSect</faction>
   <numberToSpawn>1</numberToSpawn>
-  <spawnDead>false</spawnDead> <!-- Default:false -->
-  <spawnRotten>false</spawnRotten> <!-- Default:false -->
-  <spawnFilthAround>false</spawnFilthAround> <!-- Default:false -->
-  <defendSpawnPoint>true</defendSpawnPoint> <!-- Default:false -->
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
 </KCSG.SymbolDef> 
 
 </Defs>

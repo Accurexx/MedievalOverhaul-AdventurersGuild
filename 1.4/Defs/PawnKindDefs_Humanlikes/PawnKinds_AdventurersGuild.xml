@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <PawnKindDef Name="EEG_ShadowSectPawnBase" Abstract="True">
+  <PawnKindDef Name="EEG_AdventurerGuildPawnBawse" Abstract="True">
     <race>Human</race>
-    <defaultFactionType>EEG_ShadowSect</defaultFactionType>
+    <defaultFactionType>EEG_AdventurersGuild</defaultFactionType>
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
@@ -30,9 +30,9 @@
   </PawnKindDef>
 
   <!-- ========== Cultists ========== -->
-  <PawnKindDef ParentName="EEG_ShadowSectPawnBase">
-    <defName>EEG_Sect_Novice</defName>
-    <label>shadow sect novice</label>
+  <PawnKindDef ParentName="EEG_AdventurerGuildPawnBawse">
+    <defName>EEG_QuestGiver</defName>
+    <label>Quest Giver</label>
     <combatPower>35</combatPower>
     <itemQuality>Normal</itemQuality>
     <gearHealthRange>
@@ -108,7 +108,7 @@
     </skills>
   </PawnKindDef>
 <!--
-  <PawnKindDef ParentName="EEG_ShadowSectPawnBase">
+  <PawnKindDef ParentName="EEG_AdventurerGuildPawnBawse">
     <defName>DankPyon_BrigandRaider</defName>
     <label>brigand raider</label>
     <combatPower>60</combatPower>
@@ -146,7 +146,7 @@
     </skills>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="EEG_ShadowSectPawnBase">
+  <PawnKindDef ParentName="EEG_AdventurerGuildPawnBawse">
     <defName>DankPyon_BrigandLeader</defName>
     <label>brigand leader</label>
     <combatPower>110</combatPower>
