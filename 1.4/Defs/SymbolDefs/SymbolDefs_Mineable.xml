@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Mineable -->
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MineableCoal</defName>
+  <thing>DankPyon_MineableCoal</thing>
+</KCSG.SymbolDef>
+
+</Defs>

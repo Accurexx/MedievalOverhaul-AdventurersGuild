@@ -3,182 +3,119 @@
 <QuestScriptDef>
     <defName>EEG_ShadowSect_1Tier</defName>
     <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinProgressScore>0</rootMinProgressScore>
     <rootMinPoints>0</rootMinPoints>
-    <canGiveRoyalFavor>false</canGiveRoyalFavor>
-    <expireDaysRange>4~8</expireDaysRange>
-    <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">Raided_BanditCamp</successHistoryEvent>
+    <autoAccept>true</autoAccept>
     <questNameRules>
-        <rulesStrings>
-            <li>questName->Small Shadow Sect Location discovered!</li>
-            <!--li>questName->[bandit] [camp]</li>
-            <li>questName->[asker_nameDef] and the [camp]</li>
-            <li>camp->Camp</li>
-            <li>camp->Ruin</li>
-            <li>camp->Lair</li>
-            <li>camp->Labryinth</li>
-            <li>bandit->Bandit</li>
-            <li>bandit->Raider</li>
-            <li>bandit->Outlaw</li>
-            <li>bandit->Desperado</li>
-            <li>bandit->Fugitive</li>
-            <li>bandit->Marauder</li>
-            <li>bandit->Robber</li>
-            <li>bandit->Brigand</li-->
-        </rulesStrings>
+      <rulesStrings>
+		<li>questName(siteFaction==EEG_ShadowSect)->Small Shadow Sect hideout disvocered!</li>
+      </rulesStrings>
     </questNameRules>
     <questDescriptionRules>
-      <rulesStrings>
-        <li>questDescription->According to your sources, the Shadow Sect has set up a small compound on the outskirts of town. It is believed that they are using this compound to conduct their secretive rituals and sacrifices, and that they may have information that could lead you to the larger location of their temple. You have been tasked with raiding the compound and gathering any intel that you can find. This will not be an easy task, as the sect is known to be fiercely loyal and well-armed. You will need to be careful and strategic in your approach if you hope to come out of this mission alive. Are you up for the challenge?</li>
+      <rulesStrings><!--li>questDescription(siteFaction==EEG_ShadowSect)->EEG_ShadowSect has set up an outpost near [map_definite] to harass you. [allSitePartsDescriptions]\n\nThe outpost will remain until you send a team there to attack and destroy it.</li-->
+	  <li>questDescription(siteFaction==EEG_ShadowSect)->At first glance, this compound appears to be a small, unremarkable collection of buildings. There are a few ramshackle structures that seem to be used for living and storage, and a larger, more well-constructed building that could be a workshop or meeting place. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows of the buildings are covered with heavy curtains, and there are few signs of activity. It is possible that this compound is being used as a cover for the Shadow Sect's operations, and that there may be a hidden entrance to their actual hideout somewhere within. It will be up to you to investigate further and determine the truth.</li>
       </rulesStrings>
     </questDescriptionRules>
+    <questAvailableLetterDef>NewQuest_ThreatBig</questAvailableLetterDef>
     <root Class="QuestNode_Sequence">
       <nodes>
-        <li Class="QuestNode_SubScript">
-          <def>Util_RandomizePointsChallengeRating</def>
-          <parms>
-            <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
-            <pointsFactorThreeStar>2</pointsFactorThreeStar>
-          </parms>
+        <li Class="QuestNode_Set">
+          <name>siteDistRange</name>
+          <value>1~10</value>
         </li>
+
+        <li Class="QuestNode_FactionExists">
+          <faction>EEG_ShadowSect</faction>
+          <node Class="QuestNode_Set">
+            <name>selectionWeightEEG_ShadowSect</name>
+            <value>1</value>
+          </node>
+          <elseNode Class="QuestNode_Set">
+            <name>selectionWeightEEG_ShadowSect</name>
+            <value>0</value>
+          </elseNode>
+        </li>
+
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_RandomNode">
+          <nodes>
+            <li Class="QuestNode_Sequence">
+              <nodes>
+                <li Class="QuestNode_Set">
+                  <name>siteFaction</name>
+                  <value>EEG_ShadowSect</value>
+                </li>
+                <li Class="QuestNode_Set">
+                  <name>sitePartsTags</name>
+                  <value>
+                    <li>
+                      <tag>ShadowSect_1Tier</tag>
+                    </li>
+                  </value>
+                </li>
+              </nodes>
+              <selectionWeight>$selectionWeightEEG_ShadowSect</selectionWeight>
+            </li>
+          </nodes>
+        </li>
+
         <li Class="QuestNode_SubScript">
           <def>Util_AdjustPointsForDistantFight</def>
-        </li>
-        <li Class="QuestNode_GetMap" />
-
-        <li Class="QuestNode_GetPawn">
-          <storeAs>asker</storeAs>
-          <mustBeFactionLeader>false</mustBeFactionLeader>
-          <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
-          <hostileWeight>0.15</hostileWeight>
-        </li>
-
-        <li Class="QuestNode_GetSiteTile">
-          <storeAs>siteTile</storeAs>
-          <preferCloserTiles>true</preferCloserTiles>
         </li>
 
         <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
           <storeAs>sitePartDefs</storeAs>
-          <storeFactionAs>siteFaction</storeFactionAs>
-          <sitePartsTags>
-            <li><tag>ShadowSect_1Tier</tag></li>
-          </sitePartsTags>
-          <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
+          <sitePartsTags>$sitePartsTags</sitePartsTags>
         </li>
-
-        <li Class="VFECore.QuestNode_GetFaction">
-			<allowEnemy>true</allowEnemy>
-			<mustBePermanentEnemy>true</mustBePermanentEnemy>
-			<storeAs>enemyFaction</storeAs>
-			<factionDef>EEG_ShadowSect</factionDef>
-		</li>
+        
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <clampRangeBySiteParts>true</clampRangeBySiteParts>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+        </li>
 
         <li Class="QuestNode_GetDefaultSitePartsParams">
           <tile>$siteTile</tile>
-          <faction>$enemyFaction</faction>
+          <faction>$siteFaction</faction>
           <sitePartDefs>$sitePartDefs</sitePartDefs>
           <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
-        </li>
-        
-        <li Class="QuestNode_GetSiteThreatPoints">
-          <storeAs>sitePoints</storeAs>
-          <sitePartsParams>$sitePartsParams</sitePartsParams>
-        </li>
-        <li Class="QuestNode_SubScript">
-          <def>Util_GetDefaultRewardValueFromPoints</def>
-          <parms>
-            <!-- Use the actual threat points generated (some site parts define a minimum threshold) -->
-            <points>$sitePoints</points>
-          </parms>
-        </li>
-
-        <!-- Inflate reward value. Since we're basing the reward value on the threat points generated, we need to do this
-             even though the threat points was deflated from the input points already. -->
-        <li Class="QuestNode_Multiply">
-            <value1>$rewardValue</value1>
-            <value2>1.75</value2>
-            <storeAs>rewardValue</storeAs>
         </li>
 
         <li Class="QuestNode_SubScript">
           <def>Util_GenerateSite</def>
+          <parms>
+            <hiddenSitePartsPossible>false</hiddenSitePartsPossible>
+          </parms>
         </li>
-        
+
         <li Class="QuestNode_SpawnWorldObjects">
           <worldObjects>$site</worldObjects>
         </li>
-
-        <li Class="QuestNode_WorldObjectTimeout">
-          <worldObject>$site</worldObject>
-          <isQuestTimeout>true</isQuestTimeout>
-          <delayTicks>$(randInt(12,28)*60000)</delayTicks>
-          <inSignalDisable>site.MapGenerated</inSignalDisable>
+        
+        <li Class="QuestNode_Signal">
+          <inSignal>conditionCauser.Destroyed</inSignal>
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
-                <text TKey="LetterTextQuestExpired">Unfortunately, you were too slow in accepting this mission, and the Shadow Sect member has already left. It is possible that they will return at a later date, but in the meantime, you have missed your chance to gather valuable intel and disrupt the sect's activities. You will need to be quicker on the draw next time if you hope to succeed in your mission to take down the Shadow Sect. The quest [resolvedQuestName] has expired.</text>
+                <label TKey="LetterLabelSuccess">Success!</label>
+                <letterDef>PositiveEvent</letterDef>
+                <text TKey="LetterTextSuccess">You entered the compound and managed to take out all of the Shadow Sect members, purging the location of their presence. You were able to gather a wealth of intel, including information that could lead you to the larger location of their temple. You have disrupted the Shadow Sect's activities and dealt a blow to their operations. Good work!</text>
               </li>
-              <li Class="QuestNode_End">
-                <outcome>Fail</outcome>
-              </li>
-            </nodes>
-          </node>
-        </li>
-
-        <!-- If we enter and leave, the map is destroyed. Fail the quest. -->
-        <li Class="QuestNode_Signal">
-          <inSignal>site.Destroyed</inSignal>
-          <node Class="QuestNode_Sequence">
-            <nodes>
-              <li Class="QuestNode_Letter">
-                <label TKey="LetterLabelQuestFailed">Quest failed: [resolvedQuestName]</label>
-                <text TKey="LetterTextQuestFailed">You entered the compound and managed to take out a few of the Shadow Sect members, but you were forced to retreat before you could eliminate them all. It seems that they were able to escape with some of their important belongings, and it is likely that they will regroup and come after you in the future. You will need to be more thorough in your approach next time if you hope to take down the Shadow Sect. The quest [resolvedQuestName] has ended.</text>
-              </li>
-              <li Class="QuestNode_End">
-                <outcome>Fail</outcome>
-              </li>
-            </nodes>
-          </node>
-        </li>
-
-        <li Class="QuestNode_Signal">
-          <inSignal>site.AllEnemiesDefeated</inSignal>
-          <node Class="QuestNode_Sequence">
-            <nodes>
               <li Class="QuestNode_Notify_PlayerRaidedSomeone">
                 <getRaidersFromMapParent>$site</getRaidersFromMapParent>
               </li>
-              <li Class="QuestNode_GiveRewards">
-                <parms>
-                  <allowGoodwill>false</allowGoodwill>
-                  <allowRoyalFavor>false</allowRoyalFavor>
-                  <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
-                </parms>
-                <addCampLootReward>true</addCampLootReward>
-                <customLetterLabel TKey="LetterLabelPaymentArrived">Payment arrived</customLetterLabel>
-                <customLetterText TKey="LetterTextPaymentArrived">You entered the compound and managed to take out all of the Shadow Sect members, purging the location of their presence. You were able to gather a wealth of intel, including information that could lead you to the larger location of their temple. You have disrupted the Shadow Sect's activities and dealt a blow to their operations. Good work!</customLetterText>
-                <nodeIfChosenPawnSignalUsed Class="QuestNode_Letter">
-                  <letterDef>ChoosePawn</letterDef>
-                  <label TKey="LetterLabelFavorReceiver">[asker_faction_royalFavorLabel]</label>
-                  <text TKey="LetterTextFavorReceiver">These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service.</text>
-                  <useColonistsOnMap>$site</useColonistsOnMap>
-                  <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
-                </nodeIfChosenPawnSignalUsed>
+              <li Class="QuestNode_End">
+                <outcome>Success</outcome>
               </li>
             </nodes>
           </node>
-        </li>
-        <li Class="QuestNode_End">
-          <inSignal>site.AllEnemiesDefeated</inSignal>
-          <outcome>Success</outcome>
         </li>
       </nodes>
     </root>
 	<modExtensions>
 		<li Class="QuestFinder.QuestInformation">
 			<label>Small Shadow Sect location</label>
-			<WorkTillTrigger>5000</WorkTillTrigger>
+			<WorkTillTrigger>180000</WorkTillTrigger>
 		</li>
 	</modExtensions>
   </QuestScriptDef>

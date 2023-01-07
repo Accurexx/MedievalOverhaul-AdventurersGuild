@@ -102,7 +102,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <!-- <hidden>true</hidden> -->
+	<hidden>true</hidden>
     <settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
 
     <permanentEnemy>true</permanentEnemy>
@@ -118,14 +118,6 @@
         <li>(1, 0.1, 0.1)</li>
     </colorSpectrum>
     <factionIconPath>WorldObjects/Bandit</factionIconPath>
-    
-    <requiredMemes>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-    </requiredMemes>
-    <disallowedMemes>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-    </disallowedMemes>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>60</configurationListOrderPriority>
 </FactionDef>

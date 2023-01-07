@@ -2088,7 +2088,7 @@
                 <emptyGraphicData>
                     <texPath>Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>(4,4)</drawSize>
+                    <drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>	
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>

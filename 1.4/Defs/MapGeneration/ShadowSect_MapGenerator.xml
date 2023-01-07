@@ -8,6 +8,9 @@
     <genStep Class="KCSG.GenStep_CustomStructureGen">
     <structureLayoutDefs>
         <li>EEG_Sect_Tier1_1Location</li>
+		<li>EEG_Sect_Tier1_1Location_North</li>
+		<li>EEG_Sect_Tier1_2Location</li>
+		<li>EEG_Sect_Tier1_2Location_West</li>
     </structureLayoutDefs>
     <preventBridgeable>true</preventBridgeable>
     </genStep>

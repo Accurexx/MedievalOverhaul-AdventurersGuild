@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+    <ThingDef ParentName="BuildingBase" Name="EEG_Hint" Abstract="True">
+        <altitudeLayer>WorldClipper</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <useHitPoints>true</useHitPoints>
+        <fillPercent>0.35</fillPercent>
+        <rotatable>false</rotatable>
+        <clearBuildingArea>false</clearBuildingArea>
+        <building>
+            <isEdifice>false</isEdifice>
+            <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+        </building>
+
+        <statBases>
+            <Flammability>0</Flammability>
+            <SellPriceFactor>1.30</SellPriceFactor>
+            <MeditationFocusStrength>0.0</MeditationFocusStrength>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="EEG_Hint">
+        <defName>EEG_Square</defName>
+        <label>ancient treassure map</label>
+        <graphicData>
+            <texPath>Mote/neonSquare</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>20</Beauty>
+            <Mass>1</Mass>
+            <Flammability>1</Flammability>
+        </statBases>
+    </ThingDef>
+
+</Defs>

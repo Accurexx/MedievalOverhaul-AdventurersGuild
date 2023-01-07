@@ -32,6 +32,7 @@
   <!-- ========== Cultists ========== -->
   <PawnKindDef ParentName="EEG_ShadowSectPawnBase">
     <defName>EEG_Sect_Novice</defName>
+    <defaultFactionType>EEG_ShadowSect</defaultFactionType>
     <label>shadow sect novice</label>
     <combatPower>35</combatPower>
     <itemQuality>Normal</itemQuality>
