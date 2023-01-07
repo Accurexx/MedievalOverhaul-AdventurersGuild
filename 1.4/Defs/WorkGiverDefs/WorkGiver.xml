@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <WorkGiverDef>
+        <defName>EEG_FindQuest</defName>
+        <label>operate quest finder</label>
+        <giverClass>WorkGiver_OperateScanner</giverClass>
+        <workType>Research</workType>
+        <priorityInType>80</priorityInType>
+        <verb>scan</verb>
+        <gerund>scanning at</gerund>
+        <scannerDef>EEG_QuestFinder</scannerDef>
+        <requiredCapacities>
+          <li>Manipulation</li>
+        </requiredCapacities>
+      </WorkGiverDef>
+</Defs>

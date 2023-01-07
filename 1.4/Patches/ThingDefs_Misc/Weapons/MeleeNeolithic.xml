@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/weaponTags</xpath>
+        <value>
+			<li>EEG_Knife</li>
+        </value>
+    </Operation>
+</Patch>

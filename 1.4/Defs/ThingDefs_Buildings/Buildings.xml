@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BenchBase">
+        <defName>EEG_QuestFinder</defName>
+        <label>Placeholder</label>
+        <description>Lorem impsum!</description>
+        <size>(3,2)</size>
+        <graphicData>
+            <texPath>Production/ResearchBench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(5,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <costList>
+            <DankPyon_IronIngot>25</DankPyon_IronIngot>
+            <DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
+        </costList>
+
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>2800</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <ResearchSpeedFactor>1</ResearchSpeedFactor>
+        </statBases>
+
+        <fillPercent>0.5</fillPercent>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <designationCategory>Production</designationCategory>
+        <surfaceType>Item</surfaceType>
+        <techLevel>Medieval</techLevel>
+
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>160.0</fuelConsumptionRate>
+                <fuelCapacity>50.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>WoodLog</li>                        <!--Placeholder -->
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="QuestFinder.CompProperties_QuestFinder">
+                <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+                <soundWorking>ScannerLongRangeMineral_Ambience</soundWorking>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>EEG_TreassureMap</li>
+                    <li>EEG_MagnifyingGlass</li>
+                    <!-- And so on -->
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+
+        <researchPrerequisites>
+            <!-- idk yet -->
+        </researchPrerequisites>
+    </ThingDef>
+
+    <!-- Linkables -->
+
+    <ThingDef ParentName="BuildingBase" Name="EEG_QSItems" Abstract="True">
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <useHitPoints>true</useHitPoints>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <fillPercent>0.35</fillPercent>
+        <rotatable>false</rotatable>
+        <clearBuildingArea>false</clearBuildingArea>
+        <building>
+            <isEdifice>false</isEdifice>
+            <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+        </building>
+
+        <thingCategories>
+            <li>EEG_QuestStuff</li>
+        </thingCategories>
+
+        <statBases>
+            <Flammability>0</Flammability>
+            <SellPriceFactor>1.30</SellPriceFactor>
+            <MeditationFocusStrength>0.0</MeditationFocusStrength>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+        </statBases>
+
+        <tradeTags>
+            <li>DankPyon_Book</li>
+        </tradeTags>
+
+        <comps>
+            <li Class="CompProperties_Styleable" />
+            <li Class="CompProperties_Facility">
+                <maxSimultaneous>2</maxSimultaneous>
+            </li>
+        </comps>
+
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology,">DankPyon_OldWorld</dominantStyleCategory>
+        <modExtensions>
+            <li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="EEG_QSItems">
+        <defName>EEG_TreassureMap</defName>
+        <label>ancient treassure map</label>
+        <graphicData>
+            <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <size>(2, 2)</size>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>20</Beauty>
+            <Mass>1</Mass>
+            <Flammability>1</Flammability>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="EEG_QSItems">
+        <defName>EEG_MagnifyingGlass</defName>
+        <label>magnifying glass</label>
+        <graphicData>
+            <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <size>(2, 2)</size>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>20</Beauty>
+            <Mass>1</Mass>
+            <Flammability>1</Flammability>
+        </statBases>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/QuestScriptDef[defName="DankPyon_OpportunitySite_MediumRuin"]</xpath>
+        <value>
+            <li Class="QuestFinder.QuestInformation">
+                <label>medium ruin</label>
+                <WorkTillTrigger>10000</WorkTillTrigger>
+                <LinkablesNeeded>1</LinkablesNeeded>
+                <requiredLinkable>EEG_TreassureMap</requiredLinkable>
+                <onlyOnce>true</onlyOnce>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/QuestScriptDef[defName="DankPyon_OpportunitySite_SmallRuin"]</xpath>
+        <value>
+            <li Class="QuestFinder.QuestInformation">
+                <label>small ruin</label>
+                <WorkTillTrigger>5000</WorkTillTrigger>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/QuestScriptDef[defName="DankPyon_OpportunitySite_Snake_BigRuin"]</xpath>
+        <value>
+            <li Class="QuestFinder.QuestInformation">
+                <label>big snake ruin</label>
+                <WorkTillTrigger>5000</WorkTillTrigger>
+                <LinkablesNeeded>2</LinkablesNeeded>
+            </li>
+        </value>
+    </Operation>
+</Patch>

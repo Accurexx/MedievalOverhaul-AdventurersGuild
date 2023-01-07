@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MineableCoal</defName>
+  <thing>DankPyon_MineableCoal</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallLamp_Steel_West</defName>
+  <thing>DankPyon_WallLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallLamp_Steel_East</defName>
+  <thing>DankPyon_WallLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallLamp_Steel_South</defName>
+  <thing>DankPyon_WallLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BirdPost_WoodLog_North</defName>
+  <thing>DankPyon_BirdPost</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_CandleStand_WoodLog</defName>
+  <thing>DankPyon_CandleStand</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LogBench1x4c_WoodLog_East</defName>
+  <thing>DankPyon_LogBench1x4c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallTorch_WoodLog_West</defName>
+  <thing>DankPyon_WallTorch</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallTorch_WoodLog_East</defName>
+  <thing>DankPyon_WallTorch</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Candles</defName>
+  <thing>DankPyon_Candles</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_ShelfFilledBook_WoodLog_South</defName>
+  <thing>Lootable_ShelfFilledBook</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_SackWheat_North</defName>
+  <thing>Lootable_SackWheat</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTudorBed_WoodLog_South</defName>
+  <thing>DankPyon_RoyalTudorBed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_ShelfFilledRuby_WoodLog_South</defName>
+  <thing>Lootable_ShelfFilledRuby</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalCloset_WoodLog_North</defName>
+  <thing>DankPyon_RoyalCloset</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_ShelfFilledFood_WoodLog_South</defName>
+  <thing>Lootable_ShelfFilledFood</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_ShelfFilledIngot_WoodLog_South</defName>
+  <thing>Lootable_ShelfFilledIngot</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BedFur_Cloth_South</defName>
+  <thing>DankPyon_BedFur</thing>
+  <stuff>Cloth</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_BarrelTextiles_WoodLog_North</defName>
+  <thing>Lootable_BarrelTextiles</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallTorch_WoodLog_North</defName>
+  <thing>DankPyon_WallTorch</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelWater_WoodLog_North</defName>
+  <thing>DankPyon_BarrelWater</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_SackApple_North</defName>
+  <thing>Lootable_SackApple</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_BarrelGoldOre_WoodLog_North</defName>
+  <thing>Lootable_BarrelGoldOre</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LogBench1x2c_WoodLog_East</defName>
+  <thing>DankPyon_LogBench1x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_RusticBarrelClosed_WoodLog_North</defName>
+  <thing>Lootable_RusticBarrelClosed</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ScribeTable_WoodLog_West</defName>
+  <thing>DankPyon_ScribeTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ReinforcedTable2x4c_WoodLog_North</defName>
+  <thing>DankPyon_ReinforcedTable2x4c</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticChair_WoodLog_West</defName>
+  <thing>DankPyon_RusticChair</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Lecturn_BlocksGranite_North</defName>
+  <thing>DankPyon_Lecturn</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_Book</defName>
+  <thing>Lootable_Book</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_Note_1Tier</defName>
+  <thing>EEG_Sect_Note_1Tier</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_ShelfFilledGoldware_WoodLog_South</defName>
+  <thing>Lootable_ShelfFilledGoldware</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_ShelfFilledSilverware_WoodLog_South</defName>
+  <thing>Lootable_ShelfFilledSilverware</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_ShelfFilledSapphire_WoodLog_South</defName>
+  <thing>Lootable_ShelfFilledSapphire</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_Novice</defName>
+  <pawnKindDef>EEG_Sect_Novice</pawnKindDef>
+  <isSlave>false</isSlave> <!-- Default:false -->
+  <spawnPartOfFaction>true</spawnPartOfFaction> <!-- To spawn part of map faction Default:true -->
+  <faction>EEG_ShadowSect</faction> <!-- Null for wild pawn -->
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead> <!-- Default:false -->
+  <spawnRotten>false</spawnRotten> <!-- Default:false -->
+  <spawnFilthAround>false</spawnFilthAround> <!-- Default:false -->
+  <defendSpawnPoint>true</defendSpawnPoint> <!-- Default:false -->
+</KCSG.SymbolDef> 
+
+</Defs>
