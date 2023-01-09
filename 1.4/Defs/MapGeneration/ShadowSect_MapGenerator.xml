@@ -11,9 +11,26 @@
 		<li>EEG_Sect_Tier1_1Location_North</li>
 		<li>EEG_Sect_Tier1_2Location</li>
 		<li>EEG_Sect_Tier1_2Location_West</li>
+		
+		<li>EEG_Sect_Tier1_3Location_North</li>
+		<li>EEG_Sect_Tier1_4Location</li>
     </structureLayoutDefs>
     <preventBridgeable>true</preventBridgeable>
     </genStep>
 </GenStepDef>
+
+<GenStepDef>
+    <defName>ShadowSect_2Tier_Generation</defName>
+    <linkWithSite>ShadowSect_2Tier</linkWithSite>
+    <order>460</order>
+    <genStep Class="KCSG.GenStep_CustomStructureGen">
+    <structureLayoutDefs>
+        <li>EEG_Sect_Tier2_1Location_North</li>
+		<li>EEG_Sect_Tier2_1Location_South</li>
+    </structureLayoutDefs>
+    <preventBridgeable>true</preventBridgeable>
+    </genStep>
+</GenStepDef>
+
 
 </Defs>

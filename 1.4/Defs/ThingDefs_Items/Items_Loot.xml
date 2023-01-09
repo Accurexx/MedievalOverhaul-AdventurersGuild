@@ -37,4 +37,27 @@
             <DankPyon_Paper>50</DankPyon_Paper>
         </costList-->
     </ThingDef>
+	
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>EEG_Sect_Note_2Tier</defName>
+        <label>A Tattered Note</label>
+        <description>This note is made of thin, yellowed paper, and is held together by a thin ribbon. It seems to be more detailed than the crumpled note, and contains more specific information about the temple and its location. However, it is still written in a cryptic code, and it will take some effort to decipher it. It is possible that collecting more of these notes and piecing them together will reveal the exact location of the temple.</description>
+        <graphicData>
+            <texPath>Special/TornNote2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>50</MarketValue>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <!--costList>
+            <DankPyon_Paper>50</DankPyon_Paper>
+        </costList-->
+    </ThingDef>
 </Defs>

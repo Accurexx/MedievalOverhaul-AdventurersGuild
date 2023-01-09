@@ -37,35 +37,33 @@
   <stuff>WoodLog</stuff>
 </KCSG.SymbolDef>
 
-
-
 <!-- North -->
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogChair_WoodLog_North</defName>
   <thing>DankPyon_LogChair</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x2c_WoodLog_North</defName>
   <thing>DankPyon_LogBench1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x3c_WoodLog_North</defName>
   <thing>DankPyon_LogBench1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x4c_WoodLog_North</defName>
   <thing>DankPyon_LogBench1x4c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
@@ -191,14 +189,14 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x2c_WoodLog_North</defName>
   <thing>DankPyon_LogTable1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x3c_WoodLog_North</defName>
   <thing>DankPyon_LogTable1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
@@ -333,28 +331,28 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_LogChair_WoodLog_East</defName>
   <thing>DankPyon_LogChair</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>East</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x2c_WoodLog_East</defName>
   <thing>DankPyon_LogBench1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>East</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x3c_WoodLog_East</defName>
   <thing>DankPyon_LogBench1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>East</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x4c_WoodLog_East</defName>
   <thing>DankPyon_LogBench1x4c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>East</rotation>
 </KCSG.SymbolDef>
 
@@ -473,14 +471,14 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x2c_WoodLog_East</defName>
   <thing>DankPyon_LogTable1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>East</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x3c_WoodLog_East</defName>
   <thing>DankPyon_LogTable1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>East</rotation>
 </KCSG.SymbolDef>
 
@@ -622,28 +620,28 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_LogChair_WoodLog_South</defName>
   <thing>DankPyon_LogChair</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x2c_WoodLog_South</defName>
   <thing>DankPyon_LogBench1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x3c_WoodLog_South</defName>
   <thing>DankPyon_LogBench1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x4c_WoodLog_South</defName>
   <thing>DankPyon_LogBench1x4c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
@@ -769,14 +767,14 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x2c_WoodLog_South</defName>
   <thing>DankPyon_LogTable1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x3c_WoodLog_South</defName>
   <thing>DankPyon_LogTable1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
@@ -890,28 +888,28 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_LogChair_WoodLog_West</defName>
   <thing>DankPyon_LogChair</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x2c_WoodLog_West</defName>
   <thing>DankPyon_LogBench1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x3c_WoodLog_West</defName>
   <thing>DankPyon_LogBench1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogBench1x4c_WoodLog_West</defName>
   <thing>DankPyon_LogBench1x4c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 
@@ -1037,14 +1035,14 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x2c_WoodLog_West</defName>
   <thing>DankPyon_LogTable1x2c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_LogTable1x3c_WoodLog_West</defName>
   <thing>DankPyon_LogTable1x3c</thing>
-  <stuff>WoodLog</stuff>
+  <stuff>DankPyon_RawWood</stuff>
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 

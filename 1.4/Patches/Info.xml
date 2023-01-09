@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <Operation Class="PatchOperationAddModExtension">
+    <!--Operation Class="PatchOperationAddModExtension">
         <xpath>Defs/QuestScriptDef[defName="DankPyon_OpportunitySite_MediumRuin"]</xpath>
         <value>
             <li Class="QuestFinder.QuestInformation">
@@ -30,5 +30,5 @@
                 <LinkablesNeeded>2</LinkablesNeeded>
             </li>
         </value>
-    </Operation>
+    </Operation-->
 </Patch>

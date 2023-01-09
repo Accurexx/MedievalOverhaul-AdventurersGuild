@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[stuffCategories/li='Leathery' and apparel/tags/li='MedievalMilitaryBasic']/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R3</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[apparel/bodyPartGroups/li[contains(., 'Head')] and recipeMaker/researchPrerequisite='DankPyon_Tailoring']/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R3</li>
+				</value>
+			</li>
+			
+			<!-- Chain Armor -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[recipeMaker/researchPrerequisite='DankPyon_ChainArmor' and apparel/bodyPartGroups/li='Torso']/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R4</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[recipeMaker/researchPrerequisites/li='DankPyon_AdornedArmor' and recipeMaker/researchPrerequisites/li='DankPyon_ChainArmor' and apparel/bodyPartGroups/li='Torso']/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R4</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[apparel/bodyPartGroups[contains(., 'Head')] and recipeMaker/researchPrerequisites[contains(., 'DankPyon_AdornedArmor') and contains(., 'DankPyon_ChainArmor')]]/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R4</li>
+				</value>
+			</li>
+			
+			<!-- Plate Armor -->
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[recipeMaker/researchPrerequisite='PlateArmor' and apparel/bodyPartGroups/li='Torso']/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R5</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[apparel/bodyPartGroups/li[contains(., 'Head')] and recipeMaker/researchPrerequisite='PlateArmor']/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R5</li>
+				</value>
+			</li>
+			
+			<!-- Adorned Plate Armor -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[recipeMaker/researchPrerequisites/li='DankPyon_AdornedArmor' and recipeMaker/researchPrerequisites/li='PlateArmor' and apparel/bodyPartGroups/li='Torso']/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R6</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[apparel/bodyPartGroups[contains(., 'Head')] and recipeMaker/researchPrerequisites[contains(., 'DankPyon_AdornedArmor') and contains(., 'PlateArmor')]]/apparel/tags</xpath>
+				<value>
+					<li>EEG_AG_R6</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceGold"]/label</xpath>
+				<value>
+					<label>EEG_AG_R6a</label>
+				</value>
+			</li>
+		
+			
+			
+		</operations>
+	</Operation>	
+</Patch>

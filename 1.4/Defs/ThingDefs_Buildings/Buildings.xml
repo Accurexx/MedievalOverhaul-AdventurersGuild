@@ -67,8 +67,7 @@
             </li>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
-                    <li>EEG_TreassureMap</li>
-                    <li>EEG_MagnifyingGlass</li>
+					<li>EEG_ShadowSect_1Tier_Linkable</li>
                     <!-- And so on -->
                 </linkableFacilities>
             </li>
@@ -133,7 +132,7 @@
     </ThingDef>
 
     <ThingDef ParentName="EEG_QSItems">
-        <defName>EEG_TreassureMap</defName>
+        <defName>EEG_ShadowSect_1Tier_Linkable</defName>
         <label>ancient treassure map</label>
         <graphicData>
             <texPath>Things/Building/Misc/MultiAnalyzer</texPath>

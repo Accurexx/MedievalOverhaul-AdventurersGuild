@@ -1,0 +1,1269 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============== Empire titles - Player gettable non-psycaster ============================= -->
+
+  <RoyalTitleDef Abstract="True" Name="EEG_AdventurerGuildTitleBase" >
+    <tags>
+      <li>AdventurerGuildRanks</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
+    <defName>EEG_RT1_Copper</defName>
+    <label>copper rank adventurer</label>
+    <description>Copper rank adventurers are new members of the guild who are still learning the ropes. They are given basic training in combat and are expected to follow the orders of their superiors.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <!--awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass-->
+  </RoyalTitleDef>
+
+  <!-- ============== Empire titles - Player gettable psycaster ============================= -->
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
+    <defName>EEG_RT2_Bronze</defName>
+    <label>bronze rank adventurer</label>
+    <description>Bronze rank adventurers are slightly more experienced members of the guild who have demonstrated the ability to handle more responsibility. They may be given more complex tasks and may be allowed to participate in more advanced training.</description>
+    <seniority>100</seniority>
+    <favorCost>3</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <commonality>1</commonality>
+    <maxPsylinkLevel>1</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
+    <defName>EEG_RT3_Silver</defName>
+    <label>silver rank adventurer</label>
+    <description>Silver rank adventurers are members of the guild who have shown the potential to be strong and capable fighters. They may be given more challenging quests and may be allowed to take on more leadership roles.</description>
+    <seniority>200</seniority>
+    <favorCost>6</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <changeHeirQuestPoints>1200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <disabledWorkTags>
+      <li>Cleaning</li>
+    </disabledWorkTags>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>EEG_AG_R3</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>EEG_AG_R3</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <!--throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements-->
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>12</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DankPyon_BedFur</li>
+          <li>DankPyon_BedFurDouble</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticEndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticDresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_WoodBurningStove</thingDef>
+      </li>
+      <!--li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li-->
+      <!--li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li-->
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealSimple</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+    <maxPsylinkLevel>2</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
+    <defName>EEG_RT4_Gold</defName>
+    <label>gold rank adventurer</label>
+    <labelFemale>dame</labelFemale>
+    <description>Gold rank adventurers are respected members of the guild who have proven themselves to be capable and reliable warriors. They are expected to lead by example and to set a high standard for other members to follow.</description>
+    <seniority>300</seniority>
+    <favorCost>8</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>2</decreeMentalBreakCommonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+    </disabledWorkTags>
+    <permits>
+      <li>EEG_AG_Settlement</li>
+      <li>EEG_AG_Caravan</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+		  <li>EEG_AG_R4</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+		  <li>EEG_AG_R4</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <!--throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>60</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harp</li>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements-->
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>20</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>40</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DankPyon_BedFur</li>
+          <li>DankPyon_BedFurDouble</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticEndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticDresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_WoodBurningStove</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_LogTable1x2c</li>
+          <li>DankPyon_RusticTable1x2c</li>
+          <li>DankPyon_ReinforcedRusticTable1x2c</li>
+        </things>
+      </li>
+      <!--li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li-->
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+		
+		<li>DankPyon_Wine</li>
+		<li>DankPyon_Wine_Mulberry</li>
+		
+		<li>DankPyon_Ale</li>
+		<li>DankPyon_Cider</li>
+		<li>DankPyon_Mead</li>
+		
+		<li>DankPyon_JuiceApple</li>
+      </allowedDefs>
+    </foodRequirement>
+    <maxPsylinkLevel>3</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
+    <defName>EEG_RT5_Platinum</defName>
+    <label>platinum rank adventurer</label>
+    <description>Platinum rank adventurers are senior members of the guild who have demonstrated exceptional skill and leadership. They may be given additional responsibilities, such as leading small groups of knights on quests.</description>
+    <seniority>400</seniority>
+    <favorCost>10</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>4</decreeMentalBreakCommonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <!--disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds-->
+    <!--disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags-->
+    <permits>
+      <li>EEG_AG_Settlement</li>
+      <li>EEG_AG_Caravan</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+		  <li>EEG_AG_R5</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+		  <li>EEG_AG_R5</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <!--throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>40</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>90</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harp</li>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements-->
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>60</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DankPyon_BedFur</li>
+          <li>DankPyon_BedFurDouble</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticEndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticDresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticCloset</thingDef>
+      </li>	  
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_WoodBurningStove</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_LogTable1x2c</li>
+          <li>DankPyon_RusticTable1x2c</li>
+          <li>DankPyon_ReinforcedRusticTable1x2c</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_RusticStool</li>
+          <li>DankPyon_RusticChair</li>
+          <li>DankPyon_RusticNobleChair</li>
+        </things>
+      </li>
+      <!--li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li-->
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+		
+		<li>DankPyon_Wine</li>
+		<li>DankPyon_Wine_Mulberry</li>
+		
+		<li>DankPyon_Ale</li>
+		<li>DankPyon_Cider</li>
+		<li>DankPyon_Mead</li>
+		
+		<li>DankPyon_JuiceApple</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>1200000</speechCooldown>
+    <maxPsylinkLevel>4</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
+    <defName>EEG_RT6_Mithril</defName>
+    <label>mithril rank adventurer</label>
+    <!--labelFemale>baroness</labelFemale-->
+    <description>Mithril rank adventurers are highly respected members of the guild who are responsible for overseeing the training and development of other knights. They are expected to be role models for the younger members of the guild.</description>
+    <seniority>500</seniority>
+    <favorCost>14</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2800</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>8</decreeMentalBreakCommonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <!--disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags-->
+    <permits>
+      <li>EEG_AG_Settlement</li>
+      <li>EEG_AG_Caravan</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>EEG_AG_R3</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>EEG_AG_R6</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>EEG_AG_R6</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <!--throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things><li>GrandThrone</li></things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>60</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>120</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements-->
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>28</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>70</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DankPyon_BedFur</li>
+          <li>DankPyon_BedFurDouble</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticEndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticDresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticCloset</thingDef>
+      </li>	  
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_WoodBurningStove</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_LogTable1x2c</li>
+          <li>DankPyon_RusticTable1x2c</li>
+          <li>DankPyon_ReinforcedRusticTable1x2c</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_RusticStool</li>
+          <li>DankPyon_RusticChair</li>
+          <li>DankPyon_RusticNobleChair</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_Building_SkullGold</li>
+          <li>DankPyon_Building_SkullEmerald</li>
+          <li>DankPyon_Building_SkullSapphire</li>
+		  <li>DankPyon_Building_SkullRuby</li>
+		  <li>DankPyon_Building_AncientCodex</li>
+		  <li>DankPyon_Building_BowlSilver</li>
+		  <li>DankPyon_Building_BowlGold</li>
+		  <li>DankPyon_Building_ChaliceSilver</li>
+		  <li>DankPyon_Building_ChaliceGold</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_RugHyena2x2c</li>
+          <li>DankPyon_RugWolfTimber2x2c</li>
+          <li>DankPyon_RugWolfArctic2x2c</li>
+		  <li>DankPyon_RugCougar2x2c</li>
+		  <li>DankPyon_RugPanther2x2c</li>
+		  <li>DankPyon_RugGrizzlyBear3x3c</li>
+		  <li>DankPyon_RugPolarBear3x3c</li>
+		  <li>DankPyon_RugRox3x3c</li>
+		  <li>DankPyon_RugThrumbo3x3c</li>
+		  <li>DankPyon_RugDaer4x4c</li>
+		  <li>DankPyon_RugHuman1x2c</li>
+        </things>
+      </li>
+      <!--li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li-->
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+		
+		<li>DankPyon_Wine</li>
+		<li>DankPyon_Wine_Mulberry</li>
+		
+		<li>DankPyon_Ale</li>
+		<li>DankPyon_Cider</li>
+		<li>DankPyon_Mead</li>
+		
+		<li>DankPyon_JuiceApple</li>
+		<li>DankPyon_Honey</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <maxPsylinkLevel>5</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
+    <defName>EEG_RT7_Diamond</defName>
+    <label>diamond rank adventurer</label>
+    <!--labelFemale>countess</labelFemale-->
+    <description>Diamond rank adventurers are the highest ranking knights in the guild, and they are responsible for leading large groups of knights on quests. They are expected to have exceptional leadership skills and to be able to handle any situation that arises.</description>
+    <seniority>600</seniority>
+    <favorCost>20</favorCost>
+    <minExpectation>SkyHigh</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>3500</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>12</decreeMentalBreakCommonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <!--disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+      <li>Animals</li>
+    </disabledWorkTags-->
+    <permits>
+      <li>EEG_AG_Settlement</li>
+      <li>EEG_AG_Caravan</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>DankPyon_NamedPlate</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>DankPyon_ArmetNamed</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <!--throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things><li>GrandThrone</li></things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>80</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>160</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>6</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Piano</thingDef>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements-->
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DankPyon_BedFur</li>
+          <li>DankPyon_BedFurDouble</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticEndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticDresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_RusticCloset</thingDef>
+      </li>	  
+      <li Class="RoomRequirement_Thing">
+        <thingDef>DankPyon_WoodBurningStove</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_LogTable1x2c</li>
+          <li>DankPyon_RusticTable1x2c</li>
+          <li>DankPyon_ReinforcedRusticTable1x2c</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_RusticStool</li>
+          <li>DankPyon_RusticChair</li>
+          <li>DankPyon_RusticNobleChair</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_Building_SkullGold</li>
+          <li>DankPyon_Building_SkullEmerald</li>
+          <li>DankPyon_Building_SkullSapphire</li>
+		  <li>DankPyon_Building_SkullRuby</li>
+		  <li>DankPyon_Building_AncientCodex</li>
+		  <li>DankPyon_Building_BowlSilver</li>
+		  <li>DankPyon_Building_BowlGold</li>
+		  <li>DankPyon_Building_ChaliceSilver</li>
+		  <li>DankPyon_Building_ChaliceGold</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_RugHyena2x2c</li>
+          <li>DankPyon_RugWolfTimber2x2c</li>
+          <li>DankPyon_RugWolfArctic2x2c</li>
+		  <li>DankPyon_RugCougar2x2c</li>
+		  <li>DankPyon_RugPanther2x2c</li>
+		  <li>DankPyon_RugGrizzlyBear3x3c</li>
+		  <li>DankPyon_RugPolarBear3x3c</li>
+		  <li>DankPyon_RugRox3x3c</li>
+		  <li>DankPyon_RugThrumbo3x3c</li>
+		  <li>DankPyon_RugDaer4x4c</li>
+		  <li>DankPyon_RugHuman1x2c</li>
+        </things>
+	  </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		  <li>DankPyon_ShelfFilledRuby</li>
+          <li>DankPyon_ShelfFilledSapphire</li>
+          <li>DankPyon_ShelfFilledEmerald</li>
+		  <li>DankPyon_ShelfFilledSilverware</li>
+		  <li>DankPyon_ShelfFilledGoldware</li>
+		  <li>DankPyon_ShelfFilledChaliceSilver</li>
+		  <li>DankPyon_ShelfFilledChaliceGold</li>
+        </things>
+	  </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+		
+		<li>DankPyon_Wine</li>
+		<li>DankPyon_Wine_Mulberry</li>
+		
+		<li>DankPyon_Ale</li>
+		<li>DankPyon_Cider</li>
+		<li>DankPyon_Mead</li>
+		
+		<li>DankPyon_JuiceApple</li>
+		<li>DankPyon_Honey</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>600000</speechCooldown>
+    <maxPsylinkLevel>6</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <!-- ============== Empire titles - NPC only psycaster ============================= -->
+
+
+  <RoyalTitleDef Abstract="True" Name="EEG_AdventurerGuildTitleBaseNPC" ParentName="EEG_AdventurerGuildTitleBase" >
+    <minExpectation>Royal</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>Commoner</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier2</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier5</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier6</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things><li>GrandThrone</li></things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>80</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>160</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>6</count>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Piano</thingDef>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>600000</speechCooldown>
+    <maxPsylinkLevel>6</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBaseNPC">
+    <defName>Duke</defName>
+    <label>duke</label>
+    <labelFemale>duchess</labelFemale>
+    <description>The Imperial title of duke is the highest of the middle nobility.\n\nIn the Empire, dukes control provinces, mega-cities, or moons. At war, a duke can field a division-level force, or a fleet with capital ships and dozens of support craft.</description>
+    <seniority>700</seniority>
+    <commonality>1</commonality>
+    <recruitmentResistanceOffset>125</recruitmentResistanceOffset>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier6</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBaseNPC">
+    <defName>Consul</defName>
+    <label>consul</label>
+    <description>The Imperial title of consul is a lower level of high nobility.\n\nIn the Empire, consuls control planets. At war, a consul can usually field an army-sized force of multiple divisions, supported by several fleets. Some command from a super-capital ship or control space-based megastructures.</description>
+    <seniority>800</seniority>
+    <commonality>0.6</commonality>
+    <recruitmentResistanceOffset>150</recruitmentResistanceOffset>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier6</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBaseNPC">
+    <defName>Stellarch</defName>
+    <label>stellarch</label>
+    <description>The Imperial title of stellarch represents dominion over an entire star system.\n\nIn the Empire, since interstellar travel times are years long, stellarchs rule their systems with a great degree of independence. They each swear fealty to the Emperor, but since the Emperor may be many light-years away, a stellarch may go years or decades without interacting with him.</description>
+    <seniority>900</seniority>
+    <commonality>0.1</commonality>
+    <recruitmentResistanceOffset>200</recruitmentResistanceOffset>
+    <replaceOnRecruited>Consul</replaceOnRecruited>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier7</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+  </RoyalTitleDef>
+
+  <!-- Emperor should never appear in the game in any way, it's just here for completeness on UI lists etc. -->
+  <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBaseNPC">
+    <defName>Emperor</defName>
+    <label>emperor</label>
+    <labelFemale>empress</labelFemale>
+    <description>The Imperial title of emperor indicates sovereign dominion over the entire Empire, all its peoples, planets, and fleets. All other lords swear fealty to a high lord, while the Emperor swears fealty to no one. However, even the Emperor depends on the support of lower nobles to remain in power.</description>
+    <seniority>1000</seniority>
+    <commonality>0</commonality>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier7</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+  </RoyalTitleDef>
+
+</Defs>

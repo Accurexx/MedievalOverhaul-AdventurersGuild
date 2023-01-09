@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Mineable -->
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_Note_1Tier</defName>
+  <thing>EEG_Sect_Note_1Tier</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Crate1x1c_WoodLog_South</defName>
+  <thing>DankPyon_Crate1x1c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+
+
+</Defs>
