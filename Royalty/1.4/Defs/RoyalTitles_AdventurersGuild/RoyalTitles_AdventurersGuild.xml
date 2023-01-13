@@ -32,7 +32,7 @@
     <favorCost>3</favorCost>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
     <commonality>1</commonality>
-    <maxPsylinkLevel>1</maxPsylinkLevel>
+    <!-- <maxPsylinkLevel>1</maxPsylinkLevel> -->
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
@@ -165,7 +165,7 @@
         <li>RawBerries</li>
       </allowedDefs>
     </foodRequirement>
-    <maxPsylinkLevel>2</maxPsylinkLevel>
+    <!-- <maxPsylinkLevel>2</maxPsylinkLevel> -->
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="EEG_AdventurerGuildTitleBase">
@@ -571,14 +571,6 @@
       <li>EEG_AG_Caravan</li>
     </permits>
     <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Torso</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>EEG_AG_R3</li>
-        </requiredTags>
-      </li>
       <li>
         <bodyPartGroupsMatchAny>
           <li>Torso</li>

@@ -32,6 +32,7 @@
   <!-- ========== Cultists ========== -->
   <PawnKindDef ParentName="EEG_AdventurerGuildPawnBawse">
     <defName>EEG_QuestGiver</defName>
+	<titleRequired>EEG_RT7_Diamond</titleRequired>
     <label>Quest Giver</label>
     <combatPower>35</combatPower>
     <itemQuality>Normal</itemQuality>

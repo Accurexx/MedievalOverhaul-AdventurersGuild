@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <KCSG.StructureLayoutDef>
+  <defName>testtest</defName>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+      <li>ChunkGranite,ChunkGranite,ChunkGranite,.</li>
+      <li>.,.,.,.</li>
+      <li>.,.,DankPyon_Turret_RepeaterBallista_South,.</li>
+      <li>.,.,.,EEG_Sect_Novice</li>
+    </li>
+  </layouts>
+  <modRequirements>
+    <li>dankpyon.medieval.overhaul</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+<KCSG.SymbolDef>
+  <defName>DankPyon_Turret_RepeaterBallista_South</defName>
+  <thing>DankPyon_Turret_RepeaterBallista</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+
+
+<KCSG.StructureLayoutDef>
   <defName>EEG_Sect_Tier1_1Location</defName>
   <spawnConduits>false</spawnConduits>
   <layouts>
