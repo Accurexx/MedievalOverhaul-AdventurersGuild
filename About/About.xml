@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Medieval Overhaul: Treasure Hunter</name>
   <author>Evil Eye Guy</author>
-  <url></url>
+  <url>https://github.com/Accurexx/MedievalOverhaul-TreasureHunter</url>
   <description>Blep</description>
   <packageId>EEG.TreasureHunter.MOEdition</packageId>
   <supportedVersions>
@@ -15,5 +15,18 @@
       <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
       <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
+    <li>
+      <packageId>DankPyon.Medieval.Overhaul</packageId>
+      <displayName>Medieval Overhaul</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067</steamWorkshopUrl>
+    </li>
   </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+	<li>DankPyon.Medieval.Overhaul</li>
+  </loadAfter>
+	<forceLoadAfter>
+		<li>DankPyon.Medieval.Overhaul</li>
+	</forceLoadAfter>
 </ModMetaData>
