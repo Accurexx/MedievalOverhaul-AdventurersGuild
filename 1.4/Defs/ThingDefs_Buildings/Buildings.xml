@@ -2,14 +2,15 @@
 <Defs>
     <ThingDef ParentName="BenchBase">
         <defName>EEG_QuestFinder</defName>
-        <label>Placeholder</label>
-        <description>Lorem impsum!</description>
-        <size>(3,2)</size>
+        <label>Treasure Hunter's Map</label>
+        <description>The Treasure Hunter's Map is a weathered and worn parchment, intricately detailed with ancient symbols and markings. It is said to hold the secrets of untold riches and forgotten quests, hidden deep within the realm. With this map in hand, and a keen sense of adventure, one may uncover the lost treasures of ages past and solve the mysteries of the land. Use with caution, for many have sought these riches before, and not all have returned.</description>
+        <size>(3,3)</size>
         <graphicData>
-            <texPath>Production/ResearchBench</texPath>
+            <texPath>Furniture/TreassureHunterTable/THT</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>(5,4)</drawSize>
+			<drawRotated>false</drawRotated>
+            <drawSize>(5,5)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -43,7 +44,7 @@
         </statBases>
 
         <fillPercent>0.5</fillPercent>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <interactionCellOffset>(-1,0,-2)</interactionCellOffset>
         <hasInteractionCell>true</hasInteractionCell>
         <designationCategory>Production</designationCategory>
         <surfaceType>Item</surfaceType>
@@ -125,6 +126,7 @@
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
+		
         <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology,">DankPyon_OldWorld</dominantStyleCategory>
         <modExtensions>
             <li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>

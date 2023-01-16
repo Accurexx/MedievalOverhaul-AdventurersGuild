@@ -1590,6 +1590,31 @@
 		</costList>
 
 		<designatorDropdown>DankPyon_Sack</designatorDropdown>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Storage/SackClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2,2)</drawSize>
+					<drawRotated>true</drawRotated>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~4</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_Bone</li>
+				</randomItems>
+			</li>
+		</modExtensions>	
 	</ThingDef>
 
 	<ThingDef ParentName="Lootable_Storage" Name="Lootable_SackBase">

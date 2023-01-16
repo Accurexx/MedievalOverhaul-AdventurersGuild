@@ -10,7 +10,7 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_AncientReliquaryEmpty_Steel_South</defName>
   <thing>DankPyon_AncientReliquaryEmpty</thing>
-  <stuff>Steel</stuff>
+  <stuff>BlocksGranite</stuff>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
@@ -800,6 +800,316 @@
 <KCSG.SymbolDef>
   <defName>DankPyon_Tree_Apple</defName>
   <thing>DankPyon_Tree_Apple</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_Bricks1x1c_BlocksGranite_North</defName>
+  <thing>Lootable_Bricks1x1c</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_SackClosed_North</defName>
+  <thing>Lootable_SackClosed</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TanningRack_WoodLog_South</defName>
+  <thing>DankPyon_TanningRack</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TanningRack_WoodLog_North</defName>
+  <thing>DankPyon_TanningRack</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_SackApple_North</defName>
+  <thing>Lootable_SackApple</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCookingTools_WoodLog_North</defName>
+  <thing>DankPyon_RusticCookingTools</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_StoneOvenLarge_BlocksGranite_North</defName>
+  <thing>DankPyon_StoneOvenLarge</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_SackFlour_North</defName>
+  <thing>Lootable_SackFlour</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TableBaking_WoodLog_North</defName>
+  <thing>DankPyon_TableBaking</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticChest_WoodLog_West</defName>
+  <thing>DankPyon_RusticChest</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCookingTable_BlocksGranite_South</defName>
+  <thing>DankPyon_RusticCookingTable</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_StonecuttingSpot_East</defName>
+  <thing>DankPyon_StonecuttingSpot</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LogColumn_WoodLog</defName>
+  <thing>DankPyon_LogColumn</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MineShaft_WoodLog</defName>
+  <thing>DankPyon_MineShaft</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_Bricks1x2c_BlocksGranite_North</defName>
+  <thing>Lootable_Bricks1x2c</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_StonecuttingSpot_North</defName>
+  <thing>DankPyon_StonecuttingSpot</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RugHuman1x2c_North</defName>
+  <thing>DankPyon_RugHuman1x2c</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Smelter_BlocksGranite_North</defName>
+  <thing>DankPyon_Smelter</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCookingTools_WoodLog_East</defName>
+  <thing>DankPyon_RusticCookingTools</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_AncientReliquaryEmpty_BlocksGranite_East</defName>
+  <thing>DankPyon_AncientReliquaryEmpty</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_AncientReliquaryEmpty_BlocksGranite_North</defName>
+  <thing>DankPyon_AncientReliquaryEmpty</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_AncientReliquaryEmpty_BlocksGranite_South</defName>
+  <thing>DankPyon_AncientReliquaryEmpty</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_AncientReliquary_BlocksGranite_South</defName>
+  <thing>DankPyon_AncientReliquary</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ArmorStatue_BlocksGranite_West</defName>
+  <thing>DankPyon_ArmorStatue</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_Adept_Melee</defName>
+  <pawnKindDef>EEG_Sect_Adept_Melee</pawnKindDef>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Lootable_RackMix_WoodLog_East</defName>
+  <thing>DankPyon_Lootable_RackMix</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_Adept_Ranged</defName>
+  <pawnKindDef>EEG_Sect_Adept_Ranged</pawnKindDef>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Building_SkullSapphire</defName>
+  <thing>DankPyon_Building_SkullSapphire</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ReinforcedRusticTable1x2c_DankPyon_DarkWoodLog_North</defName>
+  <thing>DankPyon_ReinforcedRusticTable1x2c</thing>
+  <stuff>DankPyon_DarkWoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticChair_DankPyon_DarkWoodLog_East</defName>
+  <thing>DankPyon_RusticChair</thing>
+  <stuff>DankPyon_DarkWoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticChair_DankPyon_DarkWoodLog_West</defName>
+  <thing>DankPyon_RusticChair</thing>
+  <stuff>DankPyon_DarkWoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RugHyena2x2c_North</defName>
+  <thing>DankPyon_RugHyena2x2c</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LogColumn_DankPyon_DarkWoodLog</defName>
+  <thing>DankPyon_LogColumn</thing>
+  <stuff>DankPyon_DarkWoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ArmorStatue_BlocksGranite_East</defName>
+  <thing>DankPyon_ArmorStatue</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Grill_Steel_South</defName>
+  <thing>DankPyon_Grill</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Loot_BarrelLeather_WoodLog_North</defName>
+  <thing>DankPyon_Loot_BarrelLeather</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_BarrelGrape_WoodTimber_North</defName>
+  <thing>Lootable_BarrelGrape</thing>
+  <stuff>WoodTimber</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticStool_DankPyon_DarkWoodLog_North</defName>
+  <thing>DankPyon_RusticStool</thing>
+  <stuff>DankPyon_DarkWoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BirdPost_WoodLog_North</defName>
+  <thing>DankPyon_BirdPost</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCounter1x3c_DankPyon_DarkWoodLog_South</defName>
+  <thing>DankPyon_RusticCounter1x3c</thing>
+  <stuff>DankPyon_DarkWoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCookingTools_WoodLog_West</defName>
+  <thing>DankPyon_RusticCookingTools</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_StewPot_Steel_East</defName>
+  <thing>DankPyon_StewPot</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TableBaking_WoodLog_West</defName>
+  <thing>DankPyon_TableBaking</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Millstone_BlocksGranite_East</defName>
+  <thing>DankPyon_Millstone</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_AdvancedResearchBench_WoodLog_North</defName>
+  <thing>DankPyon_AdvancedResearchBench</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_HighPriest_Melee</defName>
+  <pawnKindDef>EEG_Sect_HighPriest_Melee</pawnKindDef>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_HighPriest_Ranged</defName>
+  <pawnKindDef>EEG_Sect_HighPriest_Ranged</pawnKindDef>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Lootable_Book_3T</defName>
+  <thing>Lootable_Book_3T</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Lootable_ArmorStatueNamed_North</defName>
+  <thing>DankPyon_Lootable_ArmorStatueNamed</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RugDaer4x4c_North</defName>
+  <thing>DankPyon_RugDaer4x4c</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RugPanther2x2c_North</defName>
+  <thing>DankPyon_RugPanther2x2c</thing>
 </KCSG.SymbolDef>
 
 

@@ -406,8 +406,8 @@
     <li>ShadowSect_1Tier</li>
   </tags>
   <modRequirements>
-    <li>dankpyon.medieval.overhaul_steam</li>
-    <li>eeg.medieval.overhaul.ruins</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>eeg.treasurehunter.moedition</li>
   </modRequirements>
 </KCSG.StructureLayoutDef>
 
@@ -726,8 +726,8 @@
     <li>ShadowSect_1Tier</li>
   </tags>
   <modRequirements>
-    <li>dankpyon.medieval.overhaul_steam</li>
-    <li>eeg.medieval.overhaul.ruins</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>eeg.treasurehunter.moedition</li>
   </modRequirements>
 </KCSG.StructureLayoutDef>
 
@@ -982,8 +982,8 @@
     <li>ShadowSect_1Tier</li>
   </tags>
   <modRequirements>
-    <li>dankpyon.medieval.overhaul_steam</li>
-    <li>eeg.medieval.overhaul.ruins</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>eeg.treasurehunter.moedition</li>
   </modRequirements>
 </KCSG.StructureLayoutDef>
 
@@ -1274,8 +1274,8 @@
     <li>ShadowSect_1Tier</li>
   </tags>
   <modRequirements>
-    <li>dankpyon.medieval.overhaul_steam</li>
-    <li>eeg.medieval.overhaul.ruins</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>eeg.treasurehunter.moedition</li>
   </modRequirements>
 </KCSG.StructureLayoutDef>
 
@@ -1602,8 +1602,8 @@
     <li>ShadowSect_1Tier</li>
   </tags>
   <modRequirements>
-    <li>dankpyon.medieval.overhaul_steam</li>
-    <li>eeg.medieval.overhaul.ruins</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>eeg.treasurehunter.moedition</li>
   </modRequirements>
 </KCSG.StructureLayoutDef>
 
@@ -1898,8 +1898,8 @@
     <li>ShadowSect_1Tier</li>
   </tags>
   <modRequirements>
-    <li>dankpyon.medieval.overhaul_steam</li>
-    <li>eeg.medieval.overhaul.ruins</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>eeg.treasurehunter.moedition</li>
   </modRequirements>
 </KCSG.StructureLayoutDef>
 
