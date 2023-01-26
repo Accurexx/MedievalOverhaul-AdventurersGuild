@@ -236,8 +236,8 @@
 		<li Class="QuestFinder.QuestInformation">
 			<label>Medium Shadow Sect location</label>
 			<WorkTillTrigger>240000</WorkTillTrigger>
-            <requiredLinkable>EEG_ShadowSect_1Tier_Linkable</requiredLinkable>
-            <LinkablesNeeded>1</LinkablesNeeded>
+            <requiredLinkable>EEG_ShadowCultBook</requiredLinkable>
+            <LinkablesNeeded>2</LinkablesNeeded>
 		</li>
 	</modExtensions>
   </QuestScriptDef>
@@ -358,8 +358,8 @@
 		<li Class="QuestFinder.QuestInformation">
 			<label>large Shadow Cult location</label>
 			<WorkTillTrigger>300000</WorkTillTrigger>
-            <!--requiredLinkable>EEG_ShadowSect_1Tier_Linkable</requiredLinkable-->
-            <LinkablesNeeded>1</LinkablesNeeded>
+            <requiredLinkable>EEG_OrbA</requiredLinkable>
+            <LinkablesNeeded>3</LinkablesNeeded>
 		</li>
 	</modExtensions>
   </QuestScriptDef>
