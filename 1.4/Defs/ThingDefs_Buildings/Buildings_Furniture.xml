@@ -74,6 +74,7 @@
   
     <stuffCategories>
       <li>Stony</li>
+	  <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>200</costStuffCount>
 
