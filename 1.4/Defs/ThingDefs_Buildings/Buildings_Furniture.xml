@@ -60,7 +60,7 @@
   <!-- Shelf Base -->
   <ThingDef ParentName="FurnitureWithQualityBase" Name="EEG_ShelfBase" Abstract="True">
     <designationCategory>Furniture</designationCategory>
-    <altitudeLayer>Pawn</altitudeLayer>
+    <altitudeLayer>PawnUnused</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.25</fillPercent>
     <pathCost>0</pathCost>
