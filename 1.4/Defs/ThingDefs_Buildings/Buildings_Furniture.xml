@@ -61,7 +61,11 @@
   <ThingDef ParentName="FurnitureWithQualityBase" Name="EEG_ShelfBase" Abstract="True">
     <designationCategory>Furniture</designationCategory>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <altitudeLayer>PawnUnused</altitudeLayer>
+=======
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+>>>>>>> parent of 459677a (Lots of stuff)
 =======
     <altitudeLayer>BuildingOnTop</altitudeLayer>
 >>>>>>> parent of 459677a (Lots of stuff)

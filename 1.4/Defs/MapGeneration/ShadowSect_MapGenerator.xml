@@ -8,7 +8,10 @@
     <genStep Class="KCSG.GenStep_CustomStructureGen">
     <structureLayoutDefs>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<!--li>EEG_Sect_Tier1_1Location_South</li-->
+=======
+>>>>>>> parent of 459677a (Lots of stuff)
 =======
 >>>>>>> parent of 459677a (Lots of stuff)
         <li>EEG_Sect_Tier1_1Location</li>
