@@ -5,15 +5,4 @@
         <label>quest stuff</label>
         <parent>BuildingsMisc</parent>
     </ThingCategoryDef>
-
-	<DesignationCategoryDef>
-		<defName>EEG_Ruin</defName>
-		<label>Ruin</label>
-		<order>500</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-	</DesignationCategoryDef>
-	
 </Defs>

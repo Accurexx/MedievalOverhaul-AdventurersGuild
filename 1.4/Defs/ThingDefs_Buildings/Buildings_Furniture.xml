@@ -60,7 +60,11 @@
   <!-- Shelf Base -->
   <ThingDef ParentName="FurnitureWithQualityBase" Name="EEG_ShelfBase" Abstract="True">
     <designationCategory>Furniture</designationCategory>
+<<<<<<< HEAD
     <altitudeLayer>PawnUnused</altitudeLayer>
+=======
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+>>>>>>> parent of 459677a (Lots of stuff)
     <passability>PassThroughOnly</passability>
     <fillPercent>0.25</fillPercent>
     <pathCost>0</pathCost>
@@ -84,11 +88,10 @@
     <fertility>0</fertility>
 
     <graphicData>
-      <drawSize>(6.5,6.5)</drawSize>
-      <drawOffset>(0,0,0.95)</drawOffset>
+      <drawSize>(5,5)</drawSize>
+      <!-- <drawOffset>(0,0,0.2)</drawOffset> -->
       <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-	  <drawRotated>false</drawRotated>
+		<drawRotated>false</drawRotated>
       <shadowData>
         <volume>(0.3, 0.5, 0.3)</volume>
         <offset>(0,0,-0.23)</offset>
@@ -103,10 +106,10 @@
   
   <ThingDef ParentName="EEG_ShelfBase">
     <defName>EEG_ShadowCult_Shelf</defName>
-    <label>treasure hunter's book shelf</label>
+    <label>Shadow Cult</label>
 	<description>The Shadow Cult's banner is a symbol of fear and power. The background is a deep and ominous shade of red, representing the cult's brutal rituals and the blood spilled in their name. The symbol of the star with 12 rays and the central eye is emblazoned in dark red, standing out in stark contrast against the background. The star's shape is clear and detailed, representing the all-seeing gaze of the cult's deity. The rays of the star are slightly darker, giving off an aura of mystery and secrecy, fitting for the cult's elusive nature. The banner is a rallying point for the cult's followers, inspiring devotion and striking fear in the hearts of those who dare to oppose the Shadow Cult.</description>
      <graphicData>
-      <texPath>Furniture/LibraryShelf/LibraryShelf</texPath>
+      <texPath>Furniture/StoneShelf</texPath>
     </graphicData>
   </ThingDef>
   

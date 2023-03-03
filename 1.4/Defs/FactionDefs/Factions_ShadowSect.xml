@@ -9,20 +9,16 @@
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
-    <canStageAttacks>false</canStageAttacks>
+    <canStageAttacks>true</canStageAttacks>
     <leaderTitle>brigand leader</leaderTitle>
-    <!--fixedLeaderKinds>
+    <fixedLeaderKinds>
       <li>DankPyon_BrigandLeader</li>
-    </fixedLeaderKinds-->
+    </fixedLeaderKinds>
     <factionIconPath>WorldObjects/SC_Icon</factionIconPath>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Medieval</techLevel>
     <factionNameMaker>EEG_SC_NamemakerFaction</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-    <allowedCultures><li>Kriminul</li></allowedCultures>
-    <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-    </requiredMemes>
+    <allowedCultures><li>DankPyon_OldWorlder</li></allowedCultures>
     <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
@@ -60,12 +56,12 @@
     <backstoryFilters>
       <li>
         <categories>
-          <li>Pirate</li>
+          <li>Tribal</li>
         </categories>
       </li>
     </backstoryFilters>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,35)</li>
@@ -81,19 +77,10 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Drifter>10</Drifter>
-          <Thrasher>3</Thrasher>
-          <Scavenger>10</Scavenger>
-          <Pirate>10</Pirate>
-          <Grenadier_EMP>0.25</Grenadier_EMP>
-          <Grenadier_Smoke>0.25</Grenadier_Smoke>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Heavy>6</Mercenary_Heavy>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>7</Mercenary_Sniper>
-          <Mercenary_Elite>10</Mercenary_Elite>
-          <PirateBoss>5</PirateBoss>
+          <DankPyon_BrigandThug>50</DankPyon_BrigandThug>
+          <DankPyon_BrigandRaider>50</DankPyon_BrigandRaider>
+          <DankPyon_BrigandMarksman>40</DankPyon_BrigandMarksman>
+          <DankPyon_BrigandLeader>10</DankPyon_BrigandLeader>
         </options>
       </li>
       <!-- Normal fights, ranged only -->
@@ -109,24 +96,14 @@
         <kindDef>Combat</kindDef>
         <commonality>60</commonality>
         <options>
-          <Drifter>10</Drifter>
-          <Thrasher>3</Thrasher>
-          <Scavenger>10</Scavenger>
-          <Pirate>10</Pirate>
-          <Grenadier_EMP>0.25</Grenadier_EMP>
-          <Grenadier_Smoke>0.25</Grenadier_Smoke>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Heavy>6</Mercenary_Heavy>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>7</Mercenary_Sniper>
-          <Mercenary_Elite>10</Mercenary_Elite>
-          <PirateBoss>5</PirateBoss>
+          <DankPyon_BrigandThug>15</DankPyon_BrigandThug>
+          <DankPyon_BrigandRaider>40</DankPyon_BrigandRaider>
+          <DankPyon_BrigandLeader>10</DankPyon_BrigandLeader>
         </options>
       </li>
     </pawnGroupMakers>
 	<hidden>true</hidden>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
 
     <permanentEnemy>true</permanentEnemy>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
