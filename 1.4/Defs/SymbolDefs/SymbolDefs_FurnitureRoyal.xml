@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Mineable -->
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalCloset_WoodLog_North</defName>
+  <thing>DankPyon_RoyalCloset</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalBookshelf_WoodLog_North</defName>
+  <thing>DankPyon_RoyalBookshelf</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalArmchair_WoodLog_North</defName>
+  <thing>DankPyon_RoyalArmchair</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTable2x2c_WoodLog_North</defName>
+  <thing>DankPyon_RoyalTable2x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalEndTable_WoodLog_North</defName>
+  <thing>DankPyon_RoyalEndTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalDresser_WoodLog_North</defName>
+  <thing>DankPyon_RoyalDresser</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTudorBed_WoodLog_North</defName>
+  <thing>DankPyon_RoyalTudorBed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<!-- East -->
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalCloset_WoodLog_East</defName>
+  <thing>DankPyon_RoyalCloset</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalBookshelf_WoodLog_East</defName>
+  <thing>DankPyon_RoyalBookshelf</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalArmchair_WoodLog_East</defName>
+  <thing>DankPyon_RoyalArmchair</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTable2x2c_WoodLog_East</defName>
+  <thing>DankPyon_RoyalTable2x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalEndTable_WoodLog_East</defName>
+  <thing>DankPyon_RoyalEndTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalDresser_WoodLog_East</defName>
+  <thing>DankPyon_RoyalDresser</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTudorBed_WoodLog_East</defName>
+  <thing>DankPyon_RoyalTudorBed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<!-- South -->
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalCloset_WoodLog_South</defName>
+  <thing>DankPyon_RoyalCloset</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalBookshelf_WoodLog_South</defName>
+  <thing>DankPyon_RoyalBookshelf</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalArmchair_WoodLog_South</defName>
+  <thing>DankPyon_RoyalArmchair</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTable2x2c_WoodLog_South</defName>
+  <thing>DankPyon_RoyalTable2x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalEndTable_WoodLog_South</defName>
+  <thing>DankPyon_RoyalEndTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalDresser_WoodLog_South</defName>
+  <thing>DankPyon_RoyalDresser</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTudorBed_WoodLog_South</defName>
+  <thing>DankPyon_RoyalTudorBed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<!-- West -->
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalCloset_WoodLog_West</defName>
+  <thing>DankPyon_RoyalCloset</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalBookshelf_WoodLog_West</defName>
+  <thing>DankPyon_RoyalBookshelf</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalArmchair_WoodLog_West</defName>
+  <thing>DankPyon_RoyalArmchair</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTable2x2c_WoodLog_West</defName>
+  <thing>DankPyon_RoyalTable2x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalEndTable_WoodLog_West</defName>
+  <thing>DankPyon_RoyalEndTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalDresser_WoodLog_West</defName>
+  <thing>DankPyon_RoyalDresser</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalTudorBed_WoodLog_West</defName>
+  <thing>DankPyon_RoyalTudorBed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+</Defs>

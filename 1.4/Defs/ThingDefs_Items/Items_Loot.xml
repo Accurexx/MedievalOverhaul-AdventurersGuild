@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--ThingDef ParentName="ResourceBase" Name="DankPyon_LootBase" Abstract="True">
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <stackLimit>10</stackLimit>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+        <thingCategories>
+            <li>DankPyon_Loot</li>
+        </thingCategories>
+        <tradeTags>
+            <li>DankPyon_Loot</li>
+        </tradeTags>
+  </ThingDef-->
+  
+    <!--==================== Books ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>EEG_Sect_Note_1Tier</defName>
+        <label>A Crumpled Note</label>
+        <description>These notes are made of rough, cheap paper, and appear to have been hastily written. They seem to be lists of instructions or maps of some kind, but they are written in a cryptic code that is difficult to decipher. They mention a "temple" and a "sacrifice," and there are several X's marked on the page, as if marking the location of something. It is clear that these notes hold important information, but it is unclear what that information is. It is possible that collecting more of these notes and piecing them together will reveal the location of the sect's larger temple.\n\nHint: These notes can be combined at the "Cleaning Bench" to create a single item that can be connected to the "Quest Finder Workbench." This will allow you to find larger locationss of the Shadow Sect.</description>
+        <graphicData>
+            <texPath>Special/TornNote1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>50</MarketValue>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <!--costList>
+            <DankPyon_Paper>50</DankPyon_Paper>
+        </costList-->
+    </ThingDef>
+	
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>EEG_Sect_Note_2Tier</defName>
+        <label>A Tattered Note</label>
+        <description>This note is made of thin, yellowed paper, and is held together by a thin ribbon. It seems to be more detailed than the crumpled note, and contains more specific information about the temple and its location. However, it is still written in a cryptic code, and it will take some effort to decipher it. It is possible that collecting more of these notes and piecing them together will reveal the exact location of the temple.</description>
+        <graphicData>
+            <texPath>Special/TornNote2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>50</MarketValue>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <!--costList>
+            <DankPyon_Paper>50</DankPyon_Paper>
+        </costList-->
+    </ThingDef>
+</Defs>
