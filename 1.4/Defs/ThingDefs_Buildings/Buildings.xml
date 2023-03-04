@@ -26,8 +26,8 @@
         </stuffCategories>
         <costStuffCount>150</costStuffCount>
         <costList>
-            <DankPyon_IronIngot>25</DankPyon_IronIngot>
-            <DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
+            <Steel>50</Steel>
+            <ComponentIndustrial>25</ComponentIndustrial>
         </costList>
 
         <castEdgeShadows>true</castEdgeShadows>
@@ -132,7 +132,7 @@
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<designationCategory>EEG_Ruin</designationCategory>
 	</ThingDef>
 	
 	<!-- Books -->
@@ -192,7 +192,7 @@
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<designationCategory>EEG_Ruin</designationCategory>
     </ThingDef>
 	
 	<!-- Lecturn -->
@@ -232,7 +232,7 @@
 		</building>
 
 		<!--researchPrerequisites>
-			<li>DankPyon_RusticFurniture</li>
+			<li>EEG_Ruin</li>
 		</researchPrerequisites-->
 	</ThingDef>
 		
@@ -280,7 +280,7 @@
 		</comps>
 
 		<!--researchPrerequisites>
-			<li>DankPyon_RusticFurniture</li>
+			<li>EEG_Ruin</li>
 		</researchPrerequisites-->
   </ThingDef>
 		
@@ -327,7 +327,7 @@
 		</comps>
 
 		<!--researchPrerequisites>
-			<li>DankPyon_RusticFurniture</li>
+			<li>EEG_Ruin</li>
 		</researchPrerequisites-->
   </ThingDef>
 	

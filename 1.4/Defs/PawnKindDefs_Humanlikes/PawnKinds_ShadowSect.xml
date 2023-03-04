@@ -4,13 +4,13 @@
     <race>Human</race>
     <defaultFactionType>EEG_ShadowSect</defaultFactionType>
     <backstoryCategories>
-      <li>Tribal</li>
+      <li>Pirate</li>
     </backstoryCategories>
 	<minGenerationAge>18</minGenerationAge>
     <maxGenerationAge>70</maxGenerationAge>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <invNutrition>6</invNutrition>
-    <invFoodDef>DankPyon_MealBread</invFoodDef>
+    <invFoodDef>MealSimple</invFoodDef>
     <isFighter>true</isFighter>
     <techHediffsRequired>
       <li>DeathAcidifier</li>
@@ -26,7 +26,7 @@
     <requiredWorkTags>
       <li>Violent</li>
     </requiredWorkTags>
-    <weaponMoney>150</weaponMoney>
+    <weaponMoney>500</weaponMoney>
   </PawnKindDef>
 
   <!-- ========== Cultists ========== -->
@@ -42,68 +42,57 @@
     </gearHealthRange>
 	
 	<apparelRequired>
-		<li>DankPyon_Headgear_Hood</li>	
-		<li>Dankpyon_Apparel_Gambeson</li>
-		<li>DankPyon_Apparel_Leather_Tunic</li>	
-		<li>DankPyon_Apparel_Trousers</li>
-		<li>DankPyon_Handwear_GlovesLeather</li>
-		<li>DankPyon_Footwear_BootsLeather</li>
+		<li>EEG_Cloak</li>	
+		<li>Apparel_CollarShirt</li>
+		<li>Apparel_FlakVest</li>	
+		<li>Apparel_FlakPants</li>
+		<li>EEG_Cape</li>
 	</apparelRequired>
 	<specificApparelRequirements>
 		<!-- FullHead -->
 		<li>
-			<bodyPartGroup>UpperHead</bodyPartGroup>
+			<bodyPartGroup>FullHead</bodyPartGroup>
 			<apparelLayer>Overhead</apparelLayer>
-			<requiredTag>DankPyon_Headgear_Hood</requiredTag>
+			<requiredTag>EEG_Cloak</requiredTag>
 			<color>(55,55,55)</color>
 		</li>
 		<!-- Torso -->
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>Apparel_CollarShirt</requiredTag>
 			<stuff>WoolMegasloth</stuff>
-			<color>(55,55,55)</color>
+			<color>(95,0,31)</color>
 		</li>
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
-			<stuff>Leather_Plain</stuff>
+			<requiredTag>Apparel_FlakVest</requiredTag>
+			<color>(95,0,31)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>EEG_ShellAttachment</apparelLayer>
+			<requiredTag>EEG_Cape</requiredTag>
 			<color>(55,55,55)</color>
 		</li>
 		<!-- Legs -->
 		<li>
 			<bodyPartGroup>Legs</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
-			<stuff>WoolMegasloth</stuff>
+			<requiredTag>Apparel_FlakPants</requiredTag>
 			<color>(55,55,55)</color>
 		</li>
 		<!-- Hands -->
-		<li>
-			<bodyPartGroup>Hands</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Feet -->
-		<li>
-			<bodyPartGroup>Feet</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Shield -->
     </specificApparelRequirements>	
     <weaponTags>
-      <li>EEG_Knife</li>
+      <li>ShortShots</li>
     </weaponTags>
 	<skills>
 	  <li>
-        <skill>Melee</skill>
+        <skill>Shooting</skill>
         <range>3~5</range>
       </li>	  
     </skills>
@@ -111,7 +100,7 @@
   
   <!-- Tier 2 -->
 
-  <PawnKindDef ParentName="EEG_ShadowSectPawnBase" Name="EEG_ShadowSectAcolyteBase">
+  <PawnKindDef ParentName="EEG_ShadowSectPawnBase">
     <defName>EEG_Sect_Acolyte_Melee</defName>
     <defaultFactionType>EEG_ShadowSect</defaultFactionType>
     <label>shadow sect acolyte</label>
@@ -122,75 +111,62 @@
       <max>1.1</max>
     </gearHealthRange>
 	
-    <weaponMoney>300</weaponMoney>
+    <weaponMoney>500</weaponMoney>
 	
 	<apparelRequired>
-		<li>DankPyon_Headgear_Hood</li>	
-		<li>Dankpyon_Apparel_Gambeson</li>
-		<li>DankPyon_Apparel_Leather_Tunic</li>	
-		<li>DankPyon_Apparel_Trousers</li>
-		<li>DankPyon_Handwear_GlovesLeather</li>
-		<li>DankPyon_Footwear_BootsLeather</li>
-		<li>DankPyon_Apparel_Brigandine</li>
+		<li>Apparel_PowerArmorHelmet</li>	
+		<li>Apparel_CollarShirt</li>
+		<li>Apparel_PowerArmor</li>	
+		<li>EEG_Cape</li>
+		<li>Apparel_ShieldBelt</li>
 	</apparelRequired>
 	<specificApparelRequirements>
 		<!-- FullHead -->
 		<li>
-			<bodyPartGroup>UpperHead</bodyPartGroup>
+			<bodyPartGroup>FullHead</bodyPartGroup>
 			<apparelLayer>Overhead</apparelLayer>
-			<requiredTag>DankPyon_Headgear_Hood</requiredTag>
-			<color>(55,55,55)</color>
+			<requiredTag>Apparel_PowerArmorHelmet</requiredTag>
+			<color>(95,0,31)</color>
 		</li>
 		<!-- Torso -->
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>Apparel_CollarShirt</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 			<color>(95,0,31)</color>
 		</li>
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
-			<stuff>Leather_Plain</stuff>
+			<requiredTag>Apparel_PowerArmor</requiredTag>
 			<color>(95,0,31)</color>
 		</li>
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Shell</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Brigandine</requiredTag>
-			<stuff>Steel</stuff>
+			<requiredTag>Apparel_PowerArmor</requiredTag>
+			<color>(95,0,31)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>EEG_ShellAttachment</apparelLayer>
+			<requiredTag>EEG_Cape</requiredTag>
 			<color>(55,55,55)</color>
+		</li>
+		<!-- Waist -->
+		<li>
+			<bodyPartGroup>Waist</bodyPartGroup>
+			<apparelLayer>Belt</apparelLayer>
+			<requiredTag>Apparel_ShieldBelt</requiredTag>
 		</li>
 		<!-- Legs -->
-		<li>
-			<bodyPartGroup>Legs</bodyPartGroup>
-			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
-			<stuff>WoolMegasloth</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Hands -->
-		<li>
-			<bodyPartGroup>Hands</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Feet -->
-		<li>
-			<bodyPartGroup>Feet</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Shield -->
     </specificApparelRequirements>	
     <weaponTags>
-      <li>DankPyon_WingedMace</li>
+      <li>MedievalMeleeDecent</li>
     </weaponTags>
 	<skills>
 	  <li>
@@ -200,11 +176,68 @@
     </skills>
   </PawnKindDef>  
 
-  <PawnKindDef ParentName="EEG_ShadowSectAcolyteBase">
+  <PawnKindDef ParentName="EEG_ShadowSectPawnBase">
     <defName>EEG_Sect_Acolyte_Ranged</defName>
     <defaultFactionType>EEG_ShadowSect</defaultFactionType>
+    <label>shadow sect acolyte</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>
+      <min>0.4</min>
+      <max>1.1</max>
+    </gearHealthRange>
+	
+    <weaponMoney>800</weaponMoney>
+	
+	<apparelRequired>
+		<li>Apparel_PowerArmorHelmet</li>	
+		<li>Apparel_CollarShirt</li>
+		<li>Apparel_PowerArmor</li>	
+		<li>EEG_Cape</li>
+	</apparelRequired>
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>Apparel_PowerArmorHelmet</requiredTag>
+			<color>(95,0,31)</color>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>Apparel_CollarShirt</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+			<color>(95,0,31)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>Apparel_PowerArmor</requiredTag>
+			<color>(95,0,31)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>Apparel_PowerArmor</requiredTag>
+			<color>(95,0,31)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>EEG_ShellAttachment</apparelLayer>
+			<requiredTag>EEG_Cape</requiredTag>
+			<color>(55,55,55)</color>
+		</li>
+		<!-- Waist -->
+		<!-- Legs -->
+		<!-- Hands -->
+		<!-- Feet -->
+		<!-- Shield -->
+    </specificApparelRequirements>	
     <weaponTags Inherit="False">
-      <li>DankPyon_Crossbow</li>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
     </weaponTags>
 	<skills>
 	  <li>
@@ -229,71 +262,52 @@
       <max>1.1</max>
     </gearHealthRange>
 	
-    <weaponMoney>600</weaponMoney>
+    <weaponMoney>1000</weaponMoney>
 	
 	<apparelRequired>
-		<li>DankPyon_Headgear_Hood</li>	
-		<li>Dankpyon_Apparel_Gambeson</li>
-		<li>DankPyon_Apparel_Hauberk</li>	
-		<li>DankPyon_Apparel_Trousers</li>
-		<li>DankPyon_Handwear_GlovesLeather</li>
-		<li>DankPyon_Footwear_BootsLeather</li>
-		<li>DankPyon_Apparel_Breast_Plate</li>
+		<li>Apparel_ArmorHelmetRecon</li>	
+		<li>Apparel_CollarShirt</li>
+		<li>Apparel_ArmorRecon</li>	
+		<li>EEG_Cape</li>
 	</apparelRequired>
 	<specificApparelRequirements>
 		<!-- FullHead -->
 		<li>
-			<bodyPartGroup>UpperHead</bodyPartGroup>
+			<bodyPartGroup>FullHead</bodyPartGroup>
 			<apparelLayer>Overhead</apparelLayer>
-			<requiredTag>DankPyon_Headgear_Hood</requiredTag>
+			<requiredTag>Apparel_ArmorHelmetRecon</requiredTag>
 			<color>(95,0,31)</color>
 		</li>
 		<!-- Torso -->
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>Apparel_CollarShirt</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 			<color>(55,55,55)</color>
 		</li>
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
-			<stuff>Steel</stuff>
+			<requiredTag>Apparel_ArmorRecon</requiredTag>
 			<color>(55,55,55)</color>
 		</li>
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Shell</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Breast_Plate</requiredTag>
-			<stuff>Steel</stuff>
+			<requiredTag>Apparel_ArmorRecon</requiredTag>
+			<color>(55,55,55)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>EEG_ShellAttachment</apparelLayer>
+			<requiredTag>EEG_Cape</requiredTag>
 			<color>(95,0,31)</color>
 		</li>
+		<!-- Waist -->
 		<!-- Legs -->
-		<li>
-			<bodyPartGroup>Legs</bodyPartGroup>
-			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
-			<stuff>WoolMegasloth</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Hands -->
-		<li>
-			<bodyPartGroup>Hands</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Feet -->
-		<li>
-			<bodyPartGroup>Feet</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Shield -->
     </specificApparelRequirements>	
 	
@@ -307,12 +321,25 @@
 	
   <PawnKindDef ParentName="EEG_ShadowSectAdeptBase">
     <defName>EEG_Sect_Adept_Melee</defName>
+	
+	<apparelRequired>
+		<li>Apparel_ShieldBelt</li>
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<li>
+			<bodyPartGroup>Waist</bodyPartGroup>
+			<apparelLayer>Belt</apparelLayer>
+			<requiredTag>Apparel_ShieldBelt</requiredTag>
+		</li>	
+	</specificApparelRequirements>
+	
     <weaponTags>
-      <li>DankPyon_Warhammer</li>
+      <li>MedievalMeleeDecent</li>
     </weaponTags>
 	<skills>
 	  <li>
-        <skill>Shooting</skill>
+        <skill>Melee</skill>
         <range>11~15</range>
       </li>	  
     </skills>
@@ -324,7 +351,7 @@
   <PawnKindDef ParentName="EEG_ShadowSectAdeptBase">
     <defName>EEG_Sect_Adept_Ranged</defName>
     <weaponTags>
-      <li>DankPyon_Handgonne</li>
+      <li>AssaultRifle</li>
     </weaponTags>
 	<skills>
 	  <li>
@@ -349,95 +376,73 @@
       <max>1.1</max>
     </gearHealthRange>
 	
-    <weaponMoney>1000</weaponMoney>
+    <weaponMoney>1400</weaponMoney>
 	
 	<apparelRequired>
-		<li>DankPyon_Headgear_Armet</li>	
-		<li>Dankpyon_Apparel_Gambeson</li>
-		<li>DankPyon_Apparel_Hauberk</li>	
-		<li>DankPyon_Apparel_Trousers</li>
-		<li>DankPyon_Handwear_GlovesLeather</li>
-		<li>DankPyon_Footwear_BootsLeather</li>
-		<li>DankPyon_Apparel_FullPlate</li>
-		<li>DankPyon_Apparel_DirewolfPelt</li>
-		<!-- <li>EEG_SC_Hood</li> -->
+		<li>Apparel_ArmorHelmetRecon</li>	
+		<li>Apparel_CollarShirt</li>
+		<li>Apparel_ArmorRecon</li>	
+		<li>EEG_Cape</li>
 	</apparelRequired>
 	<specificApparelRequirements>
-		<!-- UpperHead -->
-		<li>
-			<!--bodyPartGroup>UpperHead</bodyPartGroup>
-			<apparelLayer>EyeCover</apparelLayer>
-			<requiredTag>EEG_SC_Hood</requiredTag>
-			<color>(95,0,31)</color-->
-		</li>
 		<!-- FullHead -->
 		<li>
 			<bodyPartGroup>FullHead</bodyPartGroup>
 			<apparelLayer>Overhead</apparelLayer>
-			<requiredTag>DankPyon_Headgear_Armet</requiredTag>
-			<stuff>Plasteel</stuff>
+			<requiredTag>Apparel_ArmorHelmetRecon</requiredTag>
 			<color>(95,0,31)</color>
 		</li>
 		<!-- Torso -->
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>Apparel_CollarShirt</requiredTag>
 			<stuff>WoolMegasloth</stuff>
-			<color>(55,55,55)</color>
+			<color>(95,0,31)</color>
 		</li>
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
-			<stuff>Steel</stuff>
-			<color>(55,55,55)</color>
+			<requiredTag>Apparel_ArmorRecon</requiredTag>
+			<color>(95,0,31)</color>
 		</li>
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Shell</apparelLayer>
-			<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
-			<stuff>Plasteel</stuff>
+			<requiredTag>Apparel_ArmorRecon</requiredTag>
 			<color>(95,0,31)</color>
 		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>EEG_ShellAttachment</apparelLayer>
+			<requiredTag>EEG_Cape</requiredTag>
+			<color>(95,0,31)</color>
+		</li>
+		<!-- Waist -->
 		<!-- Legs -->
-		<li>
-			<bodyPartGroup>Legs</bodyPartGroup>
-			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
-			<stuff>WoolMegasloth</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Hands -->
-		<li>
-			<bodyPartGroup>Hands</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Feet -->
-		<li>
-			<bodyPartGroup>Feet</bodyPartGroup>
-			<apparelLayer>Middle</apparelLayer>
-			<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
-			<stuff>Leather_Plain</stuff>
-			<color>(55,55,55)</color>
-		</li>
 		<!-- Shield -->
-		<li>
-			<bodyPartGroup>Neck</bodyPartGroup>
-			<apparelLayer>DankPyon_ShellAttachment</apparelLayer>
-			<requiredTag>DankPyon_Apparel_DirewolfPelt</requiredTag>
-			<color>(55,55,55)</color>
-		</li>
     </specificApparelRequirements>	
   </PawnKindDef>
 	
   <PawnKindDef ParentName="EEG_ShadowSectHighPristBase">
     <defName>EEG_Sect_HighPriest_Melee</defName>
+	
+	<apparelRequired>
+		<li>Apparel_ShieldBelt</li>
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<li>
+			<bodyPartGroup>Waist</bodyPartGroup>
+			<apparelLayer>Belt</apparelLayer>
+			<requiredTag>Apparel_ShieldBelt</requiredTag>
+		</li>	
+	</specificApparelRequirements>
+	
     <weaponTags>
-      <li>DankPyon_TwoHandedHammer</li>
+      <li>MedievalMeleeAdvanced</li>
     </weaponTags>
 	<skills>
 	  <li>
@@ -453,7 +458,7 @@
   <PawnKindDef ParentName="EEG_ShadowSectHighPristBase">
     <defName>EEG_Sect_HighPriest_Ranged</defName>
     <weaponTags>
-      <li>DankPyon_Arbelest</li>
+      <li>SpacerGun</li>
     </weaponTags>
 	<skills>
 	  <li>
