@@ -49,7 +49,7 @@
                   <name>sitePartsTags</name>
                   <value>
                     <li>
-                      <tag>DaR_Small_01_E</tag>
+                      <tag>ShadowSect_1Tier</tag>
                     </li>
                   </value>
                 </li>
@@ -114,9 +114,10 @@
     </root>
 	<modExtensions>
 		<li Class="QuestFinder.QuestInformation">
-			<label>Small hideout</label>
+			<label>small hideout</label>
 			<WorkTillTrigger>180000</WorkTillTrigger>
 		</li>
 	</modExtensions>
   </QuestScriptDef>
+  
 </Defs>
