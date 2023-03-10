@@ -3,7 +3,7 @@
 <!-- Lootable -->
 <KCSG.SymbolDef>
   <defName>DankPyon_Loot_Bricks1x1c_BlocksGranite_North</defName>
-  <thing>DankPyon_Loot_Bricks1x1c</thing>
+  <thing>Lootable_Bricks1x1c</thing>
   <stuff>BlocksGranite</stuff>
 </KCSG.SymbolDef>
 

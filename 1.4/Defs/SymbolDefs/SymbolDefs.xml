@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Furniture -->
+
+<KCSG.SymbolDef>
+  <defName>EEG_Sect_Novice</defName>
+  <pawnKindDef>EEG_Sect_Novice</pawnKindDef>
+</KCSG.SymbolDef>
+
+</Defs>

@@ -1019,14 +1019,14 @@
 
 <KCSG.SymbolDef>
   <defName>DankPyon_Loot_BarrelLeather_WoodLog_North</defName>
-  <thing>DankPyon_Loot_BarrelLeather</thing>
+  <thing>Lootable_BarrelLeather</thing>
   <stuff>WoodLog</stuff>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>Lootable_BarrelGrape_WoodTimber_North</defName>
   <thing>Lootable_BarrelGrape</thing>
-  <stuff>WoodTimber</stuff>
+  <stuff>WoodLog</stuff>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
