@@ -1151,4 +1151,72 @@
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallLamp_Steel_East</defName>
+  <thing>DankPyon_WallLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WallLamp_Steel_West</defName>
+  <thing>DankPyon_WallLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ScribeTable_WoodLog_West</defName>
+  <thing>DankPyon_ScribeTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Lecturn_BlocksGranite</defName>
+  <thing>EEG_Lecturn</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_ShadowCult_Shelf_BlocksGranite_South</defName>
+  <thing>EEG_ShadowCult_Shelf</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_ShadowCult_Shelf_BlocksGranite_North</defName>
+  <thing>EEG_ShadowCult_Shelf</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<!--KCSG.SymbolDef>
+  <defName>DankPyon_RusticRoundTable2x2c_WoodLog_North</defName>
+  <thing>DankPyon_RusticRoundTable2x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef-->
+
+<KCSG.SymbolDef>
+  <defName>EEG_Orb_BlocksGranite</defName>
+  <thing>EEG_Orb</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_ShadowCult_Shelf_BlocksGranite_East</defName>
+  <thing>EEG_ShadowCult_Shelf</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_ShadowCult_Shelf_BlocksGranite_West</defName>
+  <thing>EEG_ShadowCult_Shelf</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
 </Defs>

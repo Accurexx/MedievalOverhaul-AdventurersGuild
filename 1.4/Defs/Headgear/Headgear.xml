@@ -48,6 +48,10 @@
 			</defaultOutfitTags>
 		</apparel>
 
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_Camouflage"/>
+		</comps>
+
 		<!--thingClass>ThingColor.ApparelColored</thingClass>
 		<colorGenerator IsNull="True"/>
 		<modExtensions>

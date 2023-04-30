@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				<xpath>Defs/QuestScriptDef[defName="DankPyon_OpportunitySite_SmallRuin"]</xpath>
+					<value>
+						<modExtensions>
+							<li Class="QuestFinder.QuestInformation">
+								<label>Small Bandit Hideout</label>
+								<WorkTillTrigger>180000</WorkTillTrigger>
+								<LinkablesNeeded>2</LinkablesNeeded>
+							</li>
+						</modExtensions>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+				<xpath>Defs/QuestScriptDef[defName="DankPyon_OpportunitySite_MediumRuin"]</xpath>
+					<value>
+						<modExtensions>
+							<li Class="QuestFinder.QuestInformation">
+								<label>Medium Bandit Hideout</label>
+								<WorkTillTrigger>240000</WorkTillTrigger>
+								<LinkablesNeeded>4</LinkablesNeeded>
+							</li>
+						</modExtensions>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Novice"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>EEG_Cloak</li>	
+							<li>EEG_Cape</li>
+							<li>DankPyon_Apparel_Padded_Surcoat</li>
+							<li>DankPyon_Apparel_ChaussesSplinted</li>
+							<li>DankPyon_Apparel_Hauberk</li>
+
+						</apparelRequired>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Novice"]/specificApparelRequirements</xpath>
+					<value>
+						<specificApparelRequirements>
+							<li>
+								<bodyPartGroup>FullHead</bodyPartGroup>
+								<apparelLayer>Overhead</apparelLayer>
+								<requiredTag>EEG_Cloak</requiredTag>
+								<color>(55,55,55)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>OnSkin</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+								<stuff>WoolMegasloth</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>Middle</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>EEG_ShellAttachment</apparelLayer>
+								<requiredTag>EEG_Cape</requiredTag>
+								<color>(55,55,55)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Legs</bodyPartGroup>
+								<!--apparelLayer>Outer</apparelLayer-->
+								<requiredTag>DankPyon_Apparel_ChaussesSplinted</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(55,55,55)</color>
+							</li>
+						</specificApparelRequirements>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Novice"]/weaponTags</xpath>
+					<value>
+						<weaponTags>
+							<li>EEG_Knife</li>
+						</weaponTags>
+					</value>
+				</li>			
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Acolyte_Melee" or defName="EEG_Sect_Acolyte_Ranged"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>EEG_Cloak</li>
+							<li>DankPyon_Apparel_Padded_Surcoat</li>
+							<li>DankPyon_Apparel_ChaussesSplinted</li>
+							<li>DankPyon_Apparel_Hauberk</li>
+							<li>DankPyon_Apparel_Breast_Plate</li>
+						</apparelRequired>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Acolyte_Melee" or defName="EEG_Sect_Acolyte_Ranged"]/specificApparelRequirements</xpath>
+					<value>
+						<specificApparelRequirements>
+							<li>
+								<bodyPartGroup>FullHead</bodyPartGroup>
+								<apparelLayer>Overhead</apparelLayer>
+								<requiredTag>EEG_Cloak</requiredTag>
+								<color>(55,55,55)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>OnSkin</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+								<stuff>WoolMegasloth</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>Middle</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>Shell</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Breast_Plate</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(55,55,55)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Legs</bodyPartGroup>
+								<!--apparelLayer>Outer</apparelLayer-->
+								<requiredTag>DankPyon_Apparel_ChaussesSplinted</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(55,55,55)</color>
+							</li>
+						</specificApparelRequirements>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Acolyte_Ranged"]/weaponTags</xpath>
+					<value>
+						<weaponTags>
+							<li>DankPyon_Crossbow</li>
+						</weaponTags>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Adept_Melee"]/apparelRequired</xpath>
+				</li>	
+				
+				<li Class="PatchOperationRemove">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Adept_Melee"]/specificApparelRequirements</xpath>
+				</li>	
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="EEG_ShadowSectAdeptBase"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>EEG_Cloak</li>
+							<li>DankPyon_Apparel_Padded_Surcoat</li>
+							<li>DankPyon_Apparel_ChaussesSplinted</li>
+							<li>DankPyon_Apparel_Hauberk</li>
+							<li>DankPyon_Apparel_Brigandine</li>
+						</apparelRequired>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="EEG_ShadowSectAdeptBase"]/specificApparelRequirements</xpath>
+					<value>
+						<specificApparelRequirements>
+							<li>
+								<bodyPartGroup>FullHead</bodyPartGroup>
+								<apparelLayer>Overhead</apparelLayer>
+								<requiredTag>EEG_Cloak</requiredTag>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>OnSkin</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+								<stuff>WoolMegasloth</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>Middle</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>Shell</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Brigandine</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>EEG_ShellAttachment</apparelLayer>
+								<requiredTag>EEG_Cape</requiredTag>
+								<color>(55,55,55)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Legs</bodyPartGroup>
+								<!--apparelLayer>Outer</apparelLayer-->
+								<requiredTag>DankPyon_Apparel_ChaussesSplinted</requiredTag>
+								<stuff>Steel</stuff>
+								<color>(55,55,55)</color>
+							</li>
+						</specificApparelRequirements>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_Adept_Ranged"]/weaponTags</xpath>
+					<value>
+						<weaponTags>
+							<li>DankPyon_Arbelest</li>
+						</weaponTags>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="EEG_ShadowSectHighPristBase"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>DankPyon_Headgear_KlappvisorBascinet</li>
+							<li>DankPyon_Apparel_Padded_Surcoat</li>
+							<li>DankPyon_Apparel_ChaussesSplinted</li>
+							<li>DankPyon_Apparel_Hauberk</li>
+							<li>DankPyon_Apparel_Brigandine</li>
+							<li>DankPyon_Apparel_DirewolfPelt</li>
+						</apparelRequired>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/PawnKindDef[defName="EEG_Sect_HighPriest_Melee"]/apparelRequired</xpath>
+				</li>	
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/PawnKindDef[defName="EEG_Sect_HighPriest_Melee"]/specificApparelRequirements</xpath>
+				</li>	
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="EEG_ShadowSectHighPristBase"]/specificApparelRequirements</xpath>
+					<value>
+						<specificApparelRequirements>
+							<!-- FullHead -->
+							<li>
+								<bodyPartGroup>FullHead</bodyPartGroup>
+								<apparelLayer>Overhead</apparelLayer>
+								<requiredTag>DankPyon_Headgear_KlappvisorBascinet</requiredTag>
+								<stuff>Plasteel</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>OnSkin</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+								<stuff>WoolMegasloth</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>Middle</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+								<stuff>Plasteel</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>Shell</apparelLayer>
+								<requiredTag>DankPyon_Apparel_Brigandine</requiredTag>
+								<stuff>Plasteel</stuff>
+								<color>(95,0,31)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Torso</bodyPartGroup>
+								<apparelLayer>DankPyon_ShellAttachment</apparelLayer>
+								<requiredTag>DankPyon_Apparel_DirewolfPelt</requiredTag>
+								<color>(55,55,55)</color>
+							</li>
+							<li>
+								<bodyPartGroup>Legs</bodyPartGroup>
+								<!--apparelLayer>Outer</apparelLayer-->
+								<requiredTag>DankPyon_Apparel_ChaussesSplinted</requiredTag>
+								<stuff>Plasteel</stuff>
+								<color>(55,55,55)</color>
+							</li>
+						</specificApparelRequirements>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="EEG_Sect_HighPriest_Ranged"]/weaponTags</xpath>
+					<value>
+						<weaponTags>
+							<li>DankPyon_Arbelest</li>
+						</weaponTags>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>	
+</Patch>
+		

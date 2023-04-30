@@ -58,12 +58,12 @@
   </ThingDef>
 
   <!-- Shelf Base -->
-  <ThingDef ParentName="FurnitureWithQualityBase" Name="EEG_ShelfBase" Abstract="True">
-    <designationCategory>Furniture</designationCategory>
+  <ThingDef ParentName="EEG_ThingBaseMinifyable" Name="EEG_ShelfBase" Abstract="True">
     <altitudeLayer>PawnUnused</altitudeLayer>
     <passability>Impassable</passability>
     <fillPercent>0.25</fillPercent>
     <pathCost>0</pathCost>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>750</WorkToBuild>
@@ -71,12 +71,6 @@
       <Flammability>1.0</Flammability>
       <Beauty>20</Beauty>
     </statBases>
-  
-    <stuffCategories>
-      <li>Stony</li>
-	  <li>Metallic</li>
-    </stuffCategories>
-    <costStuffCount>200</costStuffCount>
 
     <holdsRoof>false</holdsRoof>
     <canOverlapZones>false</canOverlapZones>
@@ -108,6 +102,19 @@
      <graphicData>
       <texPath>Furniture/LibraryShelf/LibraryShelf</texPath>
     </graphicData>
+  
+    <stuffCategories>
+      <li>Stony</li>
+	  <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+
+	<comps Inherit="False">
+		<li Class="CompProperties_Styleable"/>
+		<li Class="CompProperties_Facility">
+			<maxSimultaneous>6</maxSimultaneous>
+		</li>
+	</comps>
   </ThingDef>
   
 </Defs>

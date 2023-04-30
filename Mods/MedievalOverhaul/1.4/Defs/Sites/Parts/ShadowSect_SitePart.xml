@@ -29,7 +29,7 @@
     <label>Large Shadow Cult location</label>
     <description>At first glance, this monastery appears to be a peaceful, secluded place of worship. It is surrounded by lush gardens and is situated on a hill overlooking the surrounding countryside. The main building is a large, impressive structure with tall, arched windows and a grand entrance. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows are covered with heavy curtains, and there are few signs of activity within. It is possible that this monastery is being used as a cover for the Shadow Sect's operations, and that there may be hidden rooms or areas within that are being used for their secretive activities. It will be up to you to investigate further and determine the truth.</description>
     <siteTexture>WorldObjects/Location_3T</siteTexture>
-	<minMapSize>(200,200,200)</minMapSize>
+	<!-- <minMapSize>(200,200,200)</minMapSize> -->
     <expandingIconTexture>WorldObjects/Location_3T</expandingIconTexture>
     <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
     <tags>

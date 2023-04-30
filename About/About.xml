@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Medieval Overhaul: Treasure Hunter</name>
+  <name>Treasure Hunter (MO Beta)</name>
   <author>Evil Eye Guy</author>
   <url>https://github.com/Accurexx/MedievalOverhaul-TreasureHunter</url>
   <description>Blep</description>
-  <packageId>EEG.TreasureHunter.MOEdition</packageId>
+  <packageId>EEG.TreasureHunter</packageId>
   <supportedVersions>
     <li>1.4</li>
   </supportedVersions>

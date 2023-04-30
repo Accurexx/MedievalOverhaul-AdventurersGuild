@@ -7,7 +7,7 @@
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
 		
-        <recipeMaker>
+        <!--recipeMaker>
             <recipeUsers>
                 <li>ElectricSmithy</li>
                 <li>FueledSmithy</li>
@@ -21,7 +21,7 @@
 			<researchPrerequisites>
 				<li>ComplexClothing</li>
 			</researchPrerequisites>
-        </recipeMaker>
+        </recipeMaker-->
 		
         <thingCategories>
 			<li>Apparel</li>
