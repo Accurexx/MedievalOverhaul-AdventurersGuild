@@ -115,7 +115,7 @@
 	<modExtensions>
 		<li Class="QuestFinder.QuestInformation">
 			<label>Small Shadow Sect location</label>
-			<WorkTillTrigger>180000</WorkTillTrigger>
+			<WorkTillTrigger>270000</WorkTillTrigger>
 		</li>
 	</modExtensions>
   </QuestScriptDef>
@@ -235,7 +235,7 @@
 	<modExtensions>
 		<li Class="QuestFinder.QuestInformation">
 			<label>Medium Shadow Sect location</label>
-			<WorkTillTrigger>240000</WorkTillTrigger>
+			<WorkTillTrigger>360000</WorkTillTrigger>
             <requiredLinkable>EEG_Lecturn</requiredLinkable>
             <LinkablesNeeded>4</LinkablesNeeded>
 		</li>
@@ -357,7 +357,7 @@
 	<modExtensions>
 		<li Class="QuestFinder.QuestInformation">
 			<label>large Shadow Cult location</label>
-			<WorkTillTrigger>300000</WorkTillTrigger>
+			<WorkTillTrigger>450000</WorkTillTrigger>
             <requiredLinkable>EEG_Orb</requiredLinkable>
             <LinkablesNeeded>7</LinkablesNeeded>
 		</li>

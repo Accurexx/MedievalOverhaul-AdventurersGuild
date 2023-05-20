@@ -318,6 +318,16 @@
 						</weaponTags>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="EEG_QuestFinder"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_IronIngot>50</DankPyon_IronIngot>
+							<DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
+						</costList>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>	

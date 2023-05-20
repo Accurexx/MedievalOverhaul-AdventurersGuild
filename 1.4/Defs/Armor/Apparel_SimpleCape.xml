@@ -7,6 +7,8 @@
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
 		
+		<recipeMaker Inherit="False"/>
+		
         <!--recipeMaker>
             <recipeUsers>
                 <li>ElectricSmithy</li>
@@ -23,10 +25,10 @@
 			</researchPrerequisites>
         </recipeMaker-->
 		
-        <thingCategories>
+        <!--thingCategories>
 			<li>Apparel</li>
             <li>ApparelArmor</li>
-        </thingCategories>
+        </thingCategories-->
 		
         <apparel>
             <bodyPartGroups>
